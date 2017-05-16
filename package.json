@@ -1,0 +1,26 @@
+{
+  "name": "bot-time-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "start": "webpack -w & NODE_ENV=production nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Gladys Um",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "express": "^4.14.0",
+    "material-ui": "^0.18.0",
+    "nodemon": "^1.11.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.3.2",
+    "watson-developer-cloud": "^2.31.1",
+    "webpack": "^1.15.0"
+  }
+}
