@@ -20402,14 +20402,16 @@
 	      var _this2 = this;
 	
 	      event.preventDefault();
-	      var input = event.target.value;
-	      // Update the state with user's input
+	      var input = this.state.value;
+	      // // Update the state with user's input
 	      this.setState({
 	        messages: this.state.messages.concat([['Me', input]]),
 	        value: ''
 	      });
-	      // Send input to Watson; update state with Watson's response
-	      _axios2.default.post('/', { input: input }).then(function (response) {
+	      // // Send input to Watson; update state with Watson's response
+	      _axios2.default.post('/', { input: input }).then(function (res) {
+	        return res.data;
+	      }).then(function (response) {
 	        _this2.setState({ messages: _this2.state.messages.concat([['Watson', response]]) });
 	      }).catch(function (error) {
 	        console.log(error);
