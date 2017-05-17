@@ -1,27 +1,38 @@
 import React from 'react';
+import axios from 'axios';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import {List, ListItem} from 'material-ui/List';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-//import Avatar from 'material-ui/Avatar';
-import Chip from 'material-ui/Chip';
-import {
-  blue300,
-  indigo900,
-  orange200,
-  deepOrange300,
-  pink400,
-  purple500,
-} from 'material-ui/styles/colors';
 
-const style = {margin: 5};
 
 export default class Chat extends React.Component {
   constructor() {
     super();
     this.state = {
-      'messages': [['Me', 'What time is it?'], ['Watson', 'The current time is 3:14PM']]
+      messages: [],
+      value: ''
     };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleChange(event) {
+    this.setState({value: event.target.value});
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    let input = event.target.value;
+    // Update the state with user's input
+    this.setState({
+      messages: this.state.messages.concat([['Me', input]]),
+      value: ''
+    });
+    // Send input to Watson; update state with Watson's response
+    axios.post('/', {input: input})
+    .then(response=>{this.setState({messages: this.state.messages.concat([['Watson', response]])})})
+    .catch(error=>{console.log(error)});
   }
 
   render () {
@@ -37,19 +48,16 @@ export default class Chat extends React.Component {
               />
             )}
           </List>
+          <form onSubmit={this.handleSubmit}>
+            <div>
+              <TextField hintText="Enter text here" value={this.state.value} onChange={this.handleChange}/>
+            </div>
 
-          <div>
-            <TextField hintText="Enter text here" />
-          </div>
-
-          <div>
-            <RaisedButton label="Submit" primary={true} />
-          </div>
+            <div>
+              <RaisedButton label="Submit" primary={true} />
+            </div>
+          </form>
         </div>
-
-
-
-
       </div>
     )
   }
