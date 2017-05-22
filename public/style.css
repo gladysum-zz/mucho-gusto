@@ -4,17 +4,38 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  height: 500px;
+  height: 595px;
 
 }
 
 .chat-container {
+  height: 300px;
   width: 50%;
   margin-top: 5%;
   margin-bottom: 2%;
-  margin-left:20%;
+  margin-left:21%;
 
   padding: 5%;
   text-align : left;
   background-color: lightyellow;
+}
+
+.chat {
+  height: 150px;
+  margin-bottom: 2%;
+  overflow-y: scroll;
+  text-align : left;
+  background-color: lightgreen;
+}
+
+.input-container {
+  height: 50px;
+  padding: 3%;
+  text-align : left;
+  background-color: lightpink;
+}
+
+.submit-button {
+  margin-top: 2%;
+  text-align: center;
 }

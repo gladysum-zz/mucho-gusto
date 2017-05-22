@@ -2,12 +2,12 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Chat from './Chat';
+import Background from './Background';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 ReactDOM.render(
   <MuiThemeProvider>
-    <Chat />
+    <Background />
   </MuiThemeProvider>,
   document.getElementById('app')
 );
