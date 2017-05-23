@@ -1,5 +1,4 @@
 import React from 'react';
-import {List, ListItem} from 'material-ui/List';
 import Statement from './Statement';
 
 export default class Chat extends React.Component {
@@ -22,7 +21,6 @@ export default class Chat extends React.Component {
   }
 
   componentDidUpdate() {
-    console.log('this', this)
     if (!this.scrolledUp) this.chatScroll.scrollTop = this.chatScroll.scrollHeight;
   }
 
