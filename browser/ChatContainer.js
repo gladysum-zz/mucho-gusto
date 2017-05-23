@@ -22,17 +22,16 @@ export default class ChatContainer extends React.Component {
   handleSubmit(event) {
     event.preventDefault();
     let input = this.state.value;
-    // // Update the state with user's input
+    // Update the state with user's input
     this.setState({
       messages: this.state.messages.concat([['Me', input]]),
       value: ''
     });
-    // // Send input to Watson; update state with Watson's response
+    // Send input to Watson; update state with Watson's response
     axios.post('/', {input: input})
     .then(res=>res.data)
     .then(response=>{this.setState({messages: this.state.messages.concat([['Watson', response]])})})
     .catch(error=>{console.log(error)});
-
   }
 
   render () {
@@ -41,7 +40,7 @@ export default class ChatContainer extends React.Component {
         <Chat messages={this.state.messages} />
         <form onSubmit={this.handleSubmit}>
           <div className="input-container">
-            <TextField hintText="Enter text here" value={this.state.value} onChange={this.handleChange}/>
+            <TextField hintText="Type a message..." value={this.state.value} onChange={this.handleChange}/>
           </div>
           <div className="submit-button">
             <RaisedButton type="submit" label="Submit" primary={true} />
