@@ -1,15 +1,15 @@
 import React from 'react';
 import {List, ListItem} from 'material-ui/List';
+import Statement from './Statement';
 
 export default class Chat extends React.Component {
   constructor() {
     super();
     this.handleScroll = this.handleScroll.bind(this);
-    console.log('this.clientHeight', this.clientHeight)
   }
 
   handleScroll() {
-    if (this.scrollTop + this.clientHeight < this.scrollHeight) {
+    if ((this.chatScroll.scrollTop + this.chatScroll.clientHeight) < this.chatScroll.scrollHeight) {
       this.scrolledUp = true;
     }
     else {
@@ -22,21 +22,29 @@ export default class Chat extends React.Component {
   }
 
   componentDidUpdate() {
-    if (!this.scrolledUp) this.scrollTop = this.scrollHeight;
+    console.log('this', this)
+    if (!this.scrolledUp) this.chatScroll.scrollTop = this.chatScroll.scrollHeight;
   }
 
   render() {
-
     return (
-      <div className="chat" onScroll={this.handleScroll}>
-      <List>
+      <div id="chat-background">
+      <ul
+        className="chat"
+        onScroll={this.handleScroll}
+        ref={
+          (div) => {
+            this.chatScroll = div;
+          }
+        }
+      >
         {this.props.messages.map((message, index) =>
-          <ListItem
-            secondaryText={message[0].toUpperCase() + ': ' + message[1]}
+          <Statement
+            message={message[0].toUpperCase() + ': ' + message[1]}
             key={index}
           />
         )}
-      </List>
+      </ul>
       </div>
     )
   }

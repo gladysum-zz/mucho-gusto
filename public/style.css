@@ -9,7 +9,7 @@
 }
 
 .chat-container {
-  height: 300px;
+  height: 400px;
   width: 50%;
   margin-top: 5%;
   margin-bottom: 2%;
@@ -20,12 +20,31 @@
   background-color: lightyellow;
 }
 
-.chat {
-  height: 150px;
+#chat-background {
+  height: 50px;
   margin-bottom: 2%;
-  overflow-y: scroll;
+  padding-bottom: 5%;
   text-align : left;
   background-color: lightgreen;
+}
+
+.chat {
+  height: 100%;
+  overflow-y: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  padding-top: 5%;
+  list-style-type: none;
+  border-style: solid;
+  border-width: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+.statement-container {
+  padding-bottom: 15px;
+
 }
 
 .input-container {

@@ -47,7 +47,6 @@ export default class ChatContainer extends React.Component {
             <RaisedButton type="submit" label="Submit" primary={true} />
           </div>
         </form>
-
       </div>
     )
   }
