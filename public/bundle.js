@@ -20427,12 +20427,12 @@
 	
 	      event.preventDefault();
 	      var input = this.state.value;
-	      // // Update the state with user's input
+	      // Update the state with user's input
 	      this.setState({
 	        messages: this.state.messages.concat([['Me', input]]),
 	        value: ''
 	      });
-	      // // Send input to Watson; update state with Watson's response
+	      // Send input to Watson; update state with Watson's response
 	      _axios2.default.post('/', { input: input }).then(function (res) {
 	        return res.data;
 	      }).then(function (response) {
@@ -20444,7 +20444,7 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', { className: 'chat-container' }, _react2.default.createElement(_Chat2.default, { messages: this.state.messages }), _react2.default.createElement('form', { onSubmit: this.handleSubmit }, _react2.default.createElement('div', { className: 'input-container' }, _react2.default.createElement(_TextField2.default, { hintText: 'Enter text here', value: this.state.value, onChange: this.handleChange })), _react2.default.createElement('div', { className: 'submit-button' }, _react2.default.createElement(_RaisedButton2.default, { type: 'submit', label: 'Submit', primary: true }))));
+	      return _react2.default.createElement('div', { className: 'chat-container' }, _react2.default.createElement(_Chat2.default, { messages: this.state.messages }), _react2.default.createElement('form', { onSubmit: this.handleSubmit }, _react2.default.createElement('div', { className: 'input-container' }, _react2.default.createElement(_TextField2.default, { hintText: 'Type a message...', value: this.state.value, onChange: this.handleChange })), _react2.default.createElement('div', { className: 'submit-button' }, _react2.default.createElement(_RaisedButton2.default, { type: 'submit', label: 'Submit', primary: true }))));
 	    }
 	  }]);
 	
