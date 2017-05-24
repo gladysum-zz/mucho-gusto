@@ -24,13 +24,13 @@ export default class ChatContainer extends React.Component {
     let input = this.state.value;
     // Update the state with user's input
     this.setState({
-      messages: this.state.messages.concat([['Me', input]]),
+      messages: this.state.messages.concat([['me', input]]),
       value: ''
     });
     // Send input to Watson; update state with Watson's response
     axios.post('/', {input: input})
     .then(res=>res.data)
-    .then(response=>{this.setState({messages: this.state.messages.concat([['Watson', response]])})})
+    .then(response=>{this.setState({messages: this.state.messages.concat([['watson', response]])})})
     .catch(error=>{console.log(error)});
   }
 

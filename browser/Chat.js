@@ -1,5 +1,7 @@
 import React from 'react';
-import Statement from './Statement';
+import Chip from 'material-ui/Chip';
+
+import Paper from 'material-ui/Paper';
 
 export default class Chat extends React.Component {
   constructor() {
@@ -36,12 +38,15 @@ export default class Chat extends React.Component {
           }
         }
       >
-        {this.props.messages.map((message, index) =>
-          <Statement
-            message={message[0].toUpperCase() + ': ' + message[1]}
-            key={index}
-          />
-        )}
+        {this.props.messages.map((message, index) => {return (
+          <div key={index} style={{textAlign: (message[0] === 'watson') ? "left" : "right"}}>
+            <Paper id="statement-bubble" zDepth={1} style={{display: "inline-block"}} className={`statement-by-${message[0]}`}>
+              <li>
+                {message[1]}
+              </li>
+            </Paper>
+          </div>
+        )})}
       </ul>
       </div>
     )

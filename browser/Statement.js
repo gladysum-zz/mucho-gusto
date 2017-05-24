@@ -1,12 +1,15 @@
 import React from 'react';
+import Chip from 'material-ui/Chip';
 
 function Statement(props) {
   return (
+    <li className="list-item">
     <div className="statement-container">
-    <li>
+    <Chip backgroundColor="white">
       {props.message}
-    </li>
+    </Chip>
     </div>
+    </li>
     );
 }
 
