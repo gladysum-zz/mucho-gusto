@@ -39,8 +39,8 @@ export default class Chat extends React.Component {
       >
         {this.props.messages.map((message, index) => {return (
           <div key={index} style={{textAlign: (message[0] === 'watson') ? "left" : "right"}}>
-            {message[0] === 'watson' ? <Avatar src="./public/images/penguin-face-icon.png" /> : null}
-            <Paper id="statement-bubble" zDepth={1} style={{display: "inline-block"}} className={`statement-by-${message[0]}`}>
+            {message[0] === 'watson' ? <Avatar style={{verticalAlign: "middle", display: "inline-block"}} src="./public/images/penguin-face-icon.png" /> : null}
+            <Paper id="statement-bubble" zDepth={1} style={{verticalAlign: "middle", display: "inline-block"}} className={`statement-by-${message[0]}`}>
               <li>
                 {message[1]}
               </li>
