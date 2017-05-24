@@ -43,11 +43,13 @@
 }
 
 .statement-by-me {
-  text-align: right;
+  background-color: blue !important;
+  color: white !important;
 }
 
 .statement-by-watson {
-
+  background-color: silver !important;
+  color: black !important;
 }
 
 #statement-bubble {
