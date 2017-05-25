@@ -30663,7 +30663,7 @@
 	          _this2.chatScroll = div;
 	        }
 	      }, this.props.messages.map(function (message, index) {
-	        return _react2.default.createElement('div', { key: index, style: { textAlign: message[0] === 'watson' ? "left" : "right" } }, message[0] === 'watson' ? _react2.default.createElement(_Avatar2.default, { style: { verticalAlign: "middle", display: "inline-block" }, src: './public/images/penguin-face-icon.png' }) : null, _react2.default.createElement(_Paper2.default, { id: 'statement-bubble', zDepth: 1, style: { verticalAlign: "middle", display: "inline-block" }, className: 'statement-by-' + message[0] }, _react2.default.createElement('li', null, message[1])));
+	        return _react2.default.createElement('div', { key: index, style: { textAlign: message[0] === 'me' ? "left" : "right" } }, _react2.default.createElement(_Paper2.default, { id: 'statement-bubble', zDepth: 1, style: { verticalAlign: "middle", display: "inline-block" }, className: 'statement-by-' + message[0] }, _react2.default.createElement('li', null, message[1])), message[0] === 'watson' ? _react2.default.createElement(_Avatar2.default, { style: { verticalAlign: "middle", display: "inline-block" }, src: './public/images/penguin-face-icon.png' }) : null);
 	      })));
 	    }
 	  }]);
