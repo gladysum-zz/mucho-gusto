@@ -2,12 +2,14 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Background from './Background';
+import { Router, Route, IndexRedirect, browserHistory } from 'react-router';
+import Chat from './Chat';
+import Home from './Home';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 ReactDOM.render(
   <MuiThemeProvider>
-    <Background />
+    <Chat />
   </MuiThemeProvider>,
   document.getElementById('app')
 );

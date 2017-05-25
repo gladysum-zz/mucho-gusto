@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
-import Chat from './Chat';
+import ChatComponent from './ChatComponent';
 
 export default class ChatContainer extends React.Component {
   constructor() {
@@ -37,7 +37,7 @@ export default class ChatContainer extends React.Component {
   render () {
     return (
       <div className="chat-container">
-        <Chat messages={this.state.messages} />
+        <ChatComponent messages={this.state.messages} />
         <form onSubmit={this.handleSubmit}>
           <div className="input-container">
             <TextField hintText="Type a message..." value={this.state.value} onChange={this.handleChange}/>
