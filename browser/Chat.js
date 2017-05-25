@@ -1,8 +1,10 @@
 import React from 'react';
 import ChatContainer from './ChatContainer';
 
-export default () => (
+const Chat = () => (
   <div className="background">
     <ChatContainer />
   </div>
 )
+
+export default Chat;

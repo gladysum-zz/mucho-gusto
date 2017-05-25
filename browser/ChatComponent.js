@@ -45,7 +45,7 @@ export default class Chat extends React.Component {
                 {message[1]}
               </li>
             </Paper>
-            {message[0] === 'watson' ? <Avatar style={{verticalAlign: "middle", display: "inline-block"}} src="./public/images/penguin-face-150.png" /> : null}
+            {message[0] === 'watson' ? <Avatar style={{verticalAlign: "middle", display: "inline-block"}} src="./images/penguin-face-150.png" /> : null}
           </div>
         )})}
       </ul>
