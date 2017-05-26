@@ -66,9 +66,20 @@
 }
 
 .link {
-  margin-top: 5%;
   text-decoration: none;
   display: inline-block;
+}
+
+#home-link {
+  color: #f46b22
+}
+
+#home-link:hover {
+  color: #dc5406;
+}
+
+#chat-button-link {
+  margin-top: 5%;
 }
 
 .chat-button {

@@ -23864,7 +23864,7 @@
 	}
 	
 	var Nav = function Nav() {
-	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, 'MUCHO GUSTO'), _react2.default.createElement('div', { className: 'nav-col-right' }, 'IconMenu'));
+	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, 'IconMenu'));
 	};
 	
 	exports.default = Nav;
@@ -34637,7 +34637,7 @@
 	}
 	
 	var Home = function Home() {
-	  return _react2.default.createElement('div', { className: 'home' }, _react2.default.createElement('div', { className: 'home-col-left' }), _react2.default.createElement('div', { className: 'home-col-middle' }, _react2.default.createElement('div', { className: 'home-face-icon' }, _react2.default.createElement('img', { src: './images/penguin-face-150.png', style: { width: "150px", height: "150px" } })), _react2.default.createElement('div', { className: 'home-main-text' }, 'Hola amigos! I\'m Paco, a Spanish-language chatbot. I was developed by Gladys Um and am powered by IBM Watson Conversation Service. Want to practice your Espa\xF1ol?'), _react2.default.createElement('div', { className: 'chat-button-container' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link' }, _react2.default.createElement('div', { className: 'chat-button' }, 'Vamos')))), _react2.default.createElement('div', { className: 'home-col-right' }));
+	  return _react2.default.createElement('div', { className: 'home' }, _react2.default.createElement('div', { className: 'home-col-left' }), _react2.default.createElement('div', { className: 'home-col-middle' }, _react2.default.createElement('div', { className: 'home-face-icon' }, _react2.default.createElement('img', { src: './images/penguin-face-150.png', style: { width: "150px", height: "150px" } })), _react2.default.createElement('div', { className: 'home-main-text' }, 'Hola amigos! I\'m Paco, a Spanish-language chatbot. I was developed by Gladys Um and am powered by IBM Watson Conversation Service. Want to practice your Espa\xF1ol?'), _react2.default.createElement('div', { className: 'chat-button-container' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'chat-button-link' }, _react2.default.createElement('div', { className: 'chat-button' }, 'Vamos')))), _react2.default.createElement('div', { className: 'home-col-right' }));
 	};
 	
 	exports.default = Home;

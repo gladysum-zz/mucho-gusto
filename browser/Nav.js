@@ -7,7 +7,11 @@ import IconButton from 'material-ui/IconButton';
 
 const Nav = ()=>(
   <div className="nav">
-    <div className="nav-col-left">MUCHO GUSTO</div>
+    <div className="nav-col-left">
+      <Link to={'/'} className="link" id="home-link">
+        MUCHO GUSTO
+      </Link>
+    </div>
     <div className="nav-col-right">IconMenu</div>
   </div>
 )

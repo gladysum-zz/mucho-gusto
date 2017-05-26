@@ -12,7 +12,7 @@ const Home = () => (
         Hola amigos! I'm Paco, a Spanish-language chatbot. I was developed by Gladys Um and am powered by IBM Watson Conversation Service. Want to practice your Español?
       </div>
       <div className="chat-button-container">
-        <Link to={'/chat'} className="link">
+        <Link to={'/chat'} className="link" id="chat-button-link">
           <div className="chat-button">
             Vamos
           </div>
