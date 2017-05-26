@@ -6,23 +6,51 @@
 .nav-col-left {
   display:inline-block;
   width: 48%;
-  vertical-align: center;
   text-align: left;
   font-family: BrandonTextWeb,Brandon Text,sans-serif;
   color: white;
-  padding: 1%;
+
   font-weight: 700;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .nav-col-right {
+ display:inline-block;
+ width: 48%;
+ text-align: right;
+ font-family: BrandonTextWeb,Brandon Text,sans-serif;
+ color: white;
+ padding: 2%;
+ font-weight: 700;
+ font-size: 40px;
+}
+
+.home {
+  height: 700px;
+}
+
+.home-col-left {
   display:inline-block;
-  width: 48%;
+  width: 29%;
+}
+
+.home-col-middle {
+  display:inline-block;
+  width: 40%;
+  margin-top: -6%;
+}
+
+.home-col-right {
+  display:inline-block;
+  width: 29%;
+}
+
+.home-face-icon {
+  height: 200px;
   vertical-align: center;
-  text-align: right;
-  font-family: BrandonTextWeb,Brandon Text,sans-serif;
-  color: white;
-  padding: 1%;
+  text-align: center;
+
+
 }
 
 .background {

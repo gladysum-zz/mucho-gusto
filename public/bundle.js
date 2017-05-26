@@ -34635,7 +34635,7 @@
 	}
 	
 	var Home = function Home() {
-	  return _react2.default.createElement("div", { className: "home" }, _react2.default.createElement("div", { className: "home-col-left" }), _react2.default.createElement("div", { className: "home-col-middle" }, _react2.default.createElement("div", { className: "home-face-icon" }), _react2.default.createElement("div", { className: "home-main-text" }), _react2.default.createElement("div", { className: "home-button" })), _react2.default.createElement("div", { className: "home-col-right" }));
+	  return _react2.default.createElement("div", { className: "home" }, _react2.default.createElement("div", { className: "home-col-left" }), _react2.default.createElement("div", { className: "home-col-middle" }, _react2.default.createElement("div", { className: "home-face-icon" }, _react2.default.createElement("img", { src: "./images/penguin-face-150.png", style: { width: "150px", height: "150px" } }), " "), _react2.default.createElement("div", { className: "home-main-text" }), _react2.default.createElement("div", { className: "home-button" })), _react2.default.createElement("div", { className: "home-col-right" }));
 	};
 	
 	exports.default = Home;
