@@ -1,9 +1,28 @@
 .nav {
-  height: 50px;
+  height: 100px;
   background-color: blue;
-  color: white;
-  font-weight: 700;
+}
+
+.nav-col-left {
+  display:inline-block;
+  width: 48%;
+  vertical-align: center;
   text-align: left;
+  font-family: BrandonTextWeb,Brandon Text,sans-serif;
+  color: white;
+  padding: 1%;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.nav-col-right {
+  display:inline-block;
+  width: 48%;
+  vertical-align: center;
+  text-align: right;
+  font-family: BrandonTextWeb,Brandon Text,sans-serif;
+  color: white;
+  padding: 1%;
 }
 
 .background {
