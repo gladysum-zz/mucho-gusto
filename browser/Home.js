@@ -1,5 +1,5 @@
 import React from 'react';
-import FlatButton from 'material-ui/FlatButton';
+import {Link} from 'react-router-dom'
 
 const Home = () => (
   <div className="home">
@@ -11,8 +11,12 @@ const Home = () => (
       <div className="home-main-text">
         Hola amigos! I'm Paco, a Spanish-language chatbot. I was developed by Gladys Um and am powered by IBM Watson Conversation Service. Want to practice your Español?
       </div>
-      <div className="home-button-container">
-        <FlatButton className="chat-button" label="Vamos a charlar"/>
+      <div className="chat-button-container">
+        <Link to={'/chat'} className="link">
+          <div className="chat-button">
+            Vamos
+          </div>
+        </Link>
       </div>
     </div>
     <div className="home-col-right"></div>

@@ -1,6 +1,6 @@
 .nav {
   height: 100px;
-  background-color: blue;
+  background-color: yellow;
 }
 
 .nav-col-left {
@@ -9,7 +9,7 @@
   vertical-align: center;
   text-align: left;
   font-family: BrandonTextWeb,Brandon Text,sans-serif;
-  color: white;
+  color: #f46b22;
   padding-left: 2%;
   font-weight: 700;
   font-size: 40px;
@@ -20,7 +20,7 @@
  width: 48%;
  text-align: right;
  font-family: BrandonTextWeb,Brandon Text,sans-serif;
- color: white;
+ color: #f46b22;
  padding: 2%;
  font-weight: 700;
  font-size: 40px;
@@ -61,19 +61,28 @@
   line-height: 1.4em;
 }
 
-.home-button-container {
+.chat-button-container {
   text-align: center;
 }
 
+.link {
+  margin-top: 5%;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .chat-button {
-  margin: 10% !important;
-  width: 200px !important;
-  height: 70px !important;
-  background-color: orange !important;
-  color: white !important;
-  font-size: 22px !important;
-  font-weight: 700 !important;
-  border-radius: 8px !important;
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 15px;
+  width: 200px;
+  height: 40px;
+  font-family: BrandonTextWeb,Brandon Text,sans-serif;
+  background-color: #f46b22;
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  border-radius: 8px;
 }
 
 .background {
