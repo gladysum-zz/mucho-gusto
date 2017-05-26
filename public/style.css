@@ -85,6 +85,10 @@
   border-radius: 8px;
 }
 
+.chat-button:hover {
+  background-color: #dc5406;
+}
+
 .background {
   background-attachment: fixed;
   background-color: #87CEFA;
