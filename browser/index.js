@@ -6,17 +6,13 @@ import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
-import Chat from './Chat';
-import Home from './Home';
+import App from './App';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 ReactDOM.render(
   <MuiThemeProvider>
     <Router>
-      <div>
-        <Route exact path="/" component={Home}/>
-        <Route path="/chat" component={Chat}/>
-      </div>
+      <App />
     </Router>
   </MuiThemeProvider>,
   document.getElementById('app')
