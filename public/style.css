@@ -5,11 +5,12 @@
 
 .nav-col-left {
   display:inline-block;
-  width: 48%;
+  width: 46%;
+  vertical-align: center;
   text-align: left;
   font-family: BrandonTextWeb,Brandon Text,sans-serif;
   color: white;
-
+  padding-left: 2%;
   font-weight: 700;
   font-size: 40px;
 }
@@ -60,7 +61,6 @@
   background-size: cover;
   display: flex;
   height: 650px;
-  margin-top: -2%;
   margin-left: -2%;
   margin-right: -2%;
 }
