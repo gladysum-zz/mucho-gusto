@@ -50,8 +50,30 @@
   height: 200px;
   vertical-align: center;
   text-align: center;
+}
 
+.home-main-text {
+  font-size: 24px;
+  font-family: BrandonTextWeb,Brandon Text,sans-serif;
+  color: #666;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.4em;
+}
 
+.home-button-container {
+  text-align: center;
+}
+
+.chat-button {
+  margin: 10% !important;
+  width: 200px !important;
+  height: 70px !important;
+  background-color: orange !important;
+  color: white !important;
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  border-radius: 8px !important;
 }
 
 .background {
