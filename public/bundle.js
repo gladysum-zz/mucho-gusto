@@ -23864,7 +23864,7 @@
 	}
 	
 	var Nav = function Nav() {
-	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, 'IconMenu'));
+	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, _react2.default.createElement('div', { className: 'dropdown' }, _react2.default.createElement('button', { className: 'dropbtn' }, '='), _react2.default.createElement('div', { className: 'dropdown-content' }, _react2.default.createElement('a', { href: '#' }, 'HOME'), _react2.default.createElement('a', { href: '#' }, 'CHAT')))));
 	};
 	
 	exports.default = Nav;

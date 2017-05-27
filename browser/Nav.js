@@ -12,7 +12,16 @@ const Nav = ()=>(
         MUCHO GUSTO
       </Link>
     </div>
-    <div className="nav-col-right">IconMenu</div>
+    <div className="nav-col-right">
+      <div className="dropdown">
+        <button className="dropbtn">=</button>
+        <div className="dropdown-content">
+          <a href="#">HOME</a>
+          <a href="#">CHAT</a>
+        </div>
+      </div>
+
+    </div>
   </div>
 )
 
