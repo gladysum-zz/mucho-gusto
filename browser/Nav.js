@@ -14,10 +14,14 @@ const Nav = ()=>(
     </div>
     <div className="nav-col-right">
       <div className="dropdown">
-        <button className="dropbtn">=</button>
+        <button className="dropbtn">
+          <div className="nav-icon"></div>
+          <div className="nav-icon"></div>
+          <div className="nav-icon"></div>
+        </button>
         <div className="dropdown-content">
-          <a href="#">HOME</a>
-          <a href="#">CHAT</a>
+          <Link to={'/'} className="link" id="menu-link">HOME</Link>
+          <Link to={'/chat'} className="link" id="menu-link">CHAT</Link>
         </div>
       </div>
 
