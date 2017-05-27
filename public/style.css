@@ -177,18 +177,22 @@
   height: 650px;
   margin-left: -2%;
   margin-right: -2%;
+
+
 }
 
 .chat-container {
   height: 400px;
-  width: 50%;
+  width: 30%;
   margin-top: 5%;
   margin-bottom: 2%;
   margin-left:21%;
 
   padding: 5%;
   text-align : left;
-  background-color: lightyellow;
+  background-color: white;
+  border-radius: 45px;
+  float: center;
 }
 
 #chat-background {
@@ -197,7 +201,7 @@
   padding-bottom: 5%;
   text-align : left;
   background-color: lightgreen;
-  border-radius: 15px 15px 0 0;
+
 }
 
 .chat {
@@ -236,7 +240,7 @@
   padding: 3%;
   text-align : left;
   background-color: lightpink;
-  border-radius: 0 0 15px 15px;
+
   z-index: 1;
 }
 
