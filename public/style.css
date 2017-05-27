@@ -169,39 +169,30 @@
 
 /* ----- CHAT PAGE----- */
 .background {
-  background-attachment: fixed;
-  background-color: #87CEFA;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: yellow;
   display: flex;
   height: 650px;
   margin-left: -2%;
   margin-right: -2%;
-
-
+  padding-left: 30%;
 }
 
 .chat-container {
-  height: 400px;
-  width: 30%;
-  margin-top: 5%;
+  height: 500px;
+  width: 500px;
+  margin-top: -7%;
   margin-bottom: 2%;
-  margin-left:21%;
-
-  padding: 5%;
-  text-align : left;
+  padding: 2%;
   background-color: white;
   border-radius: 45px;
-  float: center;
 }
 
 #chat-background {
-  height: 200px;
+  height: 300px;
   margin-bottom: 0;
   padding-bottom: 5%;
-  text-align : left;
   background-color: lightgreen;
-
+  margin-top: -4%;
 }
 
 .chat {
