@@ -6,7 +6,7 @@ const Home = () => (
     <div className="home-col-left"></div>
     <div className="home-col-middle">
       <div className="home-face-icon">
-        <img src="./images/penguin-face-150.png" style={{width: "150px", height: "150px"}}/>
+        <img src="./images/penguin-face-150.png" style={{width: "130px", height: "130px"}}/>
       </div>
       <div className="home-main-text">
         Hola amigos! I'm Paco, a Spanish-language chatbot. I was developed by Gladys Um and am powered by IBM Watson Conversation Service. Want to practice your Español?
