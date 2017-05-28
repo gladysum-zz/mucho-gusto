@@ -38,7 +38,7 @@ app.post('/', (req, res, next)=> {
   var d = new Date();
   context.period = d.getHours() < 12 ? 'AM' : 'PM';
   context.hour = d.getHours() > 12 ? d.getHours() - 12 : d.getHours();
-  context.minute = d.getMinutes();
+  context.minute = d.getMinutes() > 9 ? d.getMinutes() : '0' + d.getMinutes().toString();
 
   let message = req.body.input;
   return new Promise((resolve, reject)=>{
