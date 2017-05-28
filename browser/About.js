@@ -7,6 +7,14 @@ const About = () => (
       Meet the Team
     </div>
 
+    <div className="about-container">
+      <div className="bio">
+        <h2 id="name">Gladys Um</h2>
+        <p>Fullstack software developer proficient in JavaScript, Node.js, React, React-Redux, Express.js, Sequelize, PostgreSQL, Mocha, Chai, Jasmine, HTML, and CSS.
+Interests: Artificial intelligence, natural language processing, chatbots, IBM Watson Services</p>
+      </div>
+    </div>
+
   </div>
 )
 

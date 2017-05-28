@@ -349,5 +349,28 @@ a:active {
   text-align: center;
   color: #f46b22;
   font-weight: bold;
+  margin-bottom: 30px;
 }
 
+.about-container {
+  text-align: right;
+  width: 720px;
+  display:inline-block;
+  background-color: white;
+  border-radius: 14px;
+}
+
+.bio {
+  display:inline-block;
+  width: 45%;
+  text-align: left;
+  padding-right: 4%;
+      line-height: 1.6em;
+      color: #666;
+      font-size: 18px;
+}
+
+#name {
+  color: #f46b22;
+  font-size: 40px;
+}
