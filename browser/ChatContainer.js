@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import TextField from 'material-ui/TextField';
-import RaisedButton from 'material-ui/RaisedButton';
+// import RaisedButton from 'material-ui/RaisedButton';
+import FlatButton from 'material-ui/FlatButton';
 import ChatComponent from './ChatComponent';
 
 export default class ChatContainer extends React.Component {
@@ -42,8 +43,8 @@ export default class ChatContainer extends React.Component {
           <div className="input-container">
             <TextField hintText="Type a message..." value={this.state.value} onChange={this.handleChange}/>
           </div>
-          <div className="submit-button">
-            <RaisedButton type="submit" label="Submit" primary={true} />
+          <div className="submit-button-container">
+            <FlatButton type="submit" label="Submit" className="submit-button" primary={true} />
           </div>
         </form>
       </div>
