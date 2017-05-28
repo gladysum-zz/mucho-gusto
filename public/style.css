@@ -11,7 +11,7 @@
 
 .nav-col-left {
   display:inline-block;
-  width: 49%;
+  width: 48%;
   text-align: left;
   padding: 2%;
 }
@@ -112,7 +112,7 @@
 
 .home-col-left {
   display:inline-block;
-  width: 29%;
+  width: 30%;
 }
 
 .home-col-middle {
@@ -122,13 +122,12 @@
 
 .home-col-right {
   display:inline-block;
-  width: 29%;
+  width: 30%;
 }
 
 .home-face-icon {
   margin-top: -14%;
   height: 200px;
-  vertical-align: center;
   text-align: center;
 }
 
@@ -169,30 +168,40 @@
 
 /* ----- CHAT PAGE----- */
 .background {
+  height: 700px;
   background-color: yellow;
-  display: flex;
-  height: 650px;
-  margin-left: -2%;
-  margin-right: -2%;
-  padding-left: 30%;
+  margin: 0 -1% -1% -1%;
+}
+
+.chat-col-left {
+  display:inline-block;
+  width: 30%;
+}
+
+.chat-col-middle {
+  display:inline-block;
+  width: 40%;
+}
+
+.chat-col-right {
+  display:inline-block;
+  width: 30%;
 }
 
 .chat-container {
   height: 500px;
-  width: 500px;
-  margin-top: -7%;
-  margin-bottom: 2%;
-  padding: 2%;
+  width: 100%;
+  margin-top: -12%;
+  padding: 4%;
   background-color: white;
   border-radius: 45px;
 }
 
 #chat-background {
   height: 300px;
-  margin-bottom: 0;
   padding-bottom: 5%;
   background-color: lightgreen;
-  margin-top: -4%;
+
 }
 
 .chat {

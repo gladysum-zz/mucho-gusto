@@ -34665,7 +34665,7 @@
 	}
 	
 	var Chat = function Chat() {
-	  return _react2.default.createElement('div', { className: 'background' }, _react2.default.createElement(_ChatContainer2.default, null));
+	  return _react2.default.createElement('div', { className: 'background' }, _react2.default.createElement('div', { className: 'chat-col-left' }), _react2.default.createElement('div', { className: 'chat-col-middle' }, _react2.default.createElement(_ChatContainer2.default, null)), _react2.default.createElement('div', { className: 'chat-col-right' }));
 	};
 	
 	exports.default = Chat;
