@@ -262,9 +262,42 @@
 }
 
 /* ----- CONTACT PAGE----- */
-.contact {
+.contact-background {
   height: 700px;
   background-color: yellow;
   margin: 0 -1% -1% -1%;
+}
+
+.contact-col-left {
+  display:inline-block;
+  width: 20%;
+}
+
+.contact-col-middle {
+  display:inline-block;
+  width: 60%;
+}
+
+.contact-col-right {
+  display:inline-block;
+  width: 20%;
+}
+
+.contact-me {
+  font-size: 54px;
+  text-align: center;
+}
+
+.contact-text {
+  font-size: 24px;
+}
+
+.contact-links {
+  width: 100%;
+}
+
+.contact-col {
+  display:inline-block;
+  width: 33%;
 }
 

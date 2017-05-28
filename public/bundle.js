@@ -45085,7 +45085,7 @@
 	}
 	
 	var Contact = function Contact() {
-	  return _react2.default.createElement('div', { className: 'contact' }, 'Contact Me');
+	  return _react2.default.createElement('div', { className: 'contact-background' }, _react2.default.createElement('div', { className: 'contact-col-left' }), _react2.default.createElement('div', { className: 'contact-col-middle' }, _react2.default.createElement('div', { className: 'contact-me' }, 'Contact Me'), _react2.default.createElement('div', { className: 'contact-text' }, 'Want to get in touch with me? Wanna collab? Send me your questions or requests using one of the emails below.'), _react2.default.createElement('div', { className: 'contact-links' }, _react2.default.createElement('div', { className: 'contact-col' }, 'LinkedIn', _react2.default.createElement('br', null), 'linkedin.com/in/gladysum/'), _react2.default.createElement('div', { className: 'contact-col' }, 'GitHub', _react2.default.createElement('br', null), 'github.com/gladysum'), _react2.default.createElement('div', { className: 'contact-col' }, 'Email', _react2.default.createElement('br', null), 'gladysum (at) gmail (dot) com'))), _react2.default.createElement('div', { className: 'contact-col-right' }));
 	};
 	
 	exports.default = Contact;
