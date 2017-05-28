@@ -23807,6 +23807,10 @@
 	
 	var _Chat2 = _interopRequireDefault(_Chat);
 	
+	var _Contact = __webpack_require__(482);
+	
+	var _Contact2 = _interopRequireDefault(_Contact);
+	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -23816,6 +23820,8 @@
 	  main: _Home2.default
 	}, { path: '/chat',
 	  main: _Chat2.default
+	}, { path: '/contact',
+	  main: _Contact2.default
 	}];
 	
 	var App = function App() {
@@ -23864,7 +23870,7 @@
 	}
 	
 	var Nav = function Nav() {
-	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, _react2.default.createElement('div', { className: 'dropdown' }, _react2.default.createElement('button', { className: 'dropbtn' }, _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' })), _react2.default.createElement('div', { className: 'dropdown-content' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'menu-link' }, 'HOME'), _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'menu-link' }, 'CHAT')))));
+	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, _react2.default.createElement('div', { className: 'dropdown' }, _react2.default.createElement('button', { className: 'dropbtn' }, _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' })), _react2.default.createElement('div', { className: 'dropdown-content' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'menu-link' }, 'HOME'), _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'menu-link' }, 'CHAT'), _react2.default.createElement(_reactRouterDom.Link, { to: '/contact', className: 'link', id: 'menu-link' }, 'CONTACT')))));
 	};
 	
 	exports.default = Nav;
@@ -45057,6 +45063,32 @@
 	};
 	
 	exports.default = new Typography();
+
+/***/ }),
+/* 482 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouterDom = __webpack_require__(168);
+	
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Contact = function Contact() {
+	  return _react2.default.createElement('div', { className: 'contact' }, 'Contact Me');
+	};
+	
+	exports.default = Contact;
 
 /***/ })
 /******/ ]);

@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Nav from './Nav'
 import Home from './Home'
 import Chat from './Chat'
+import Contact from './Contact'
 
 const routes = [
   { path: '/',
@@ -11,6 +12,9 @@ const routes = [
   },
   { path: '/chat',
     main: Chat
+  },
+  { path: '/contact',
+    main: Contact
   }
 ]
 
