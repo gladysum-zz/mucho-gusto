@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
+.app {
+  font-family: 'Lato', sans-serif;
+}
 
 /* ----- NAVBAR ----- */
 .nav {
@@ -286,18 +289,49 @@
 .contact-me {
   font-size: 54px;
   text-align: center;
+  color: #f46b22;
+  font-weight: bold;
 }
 
 .contact-text {
   font-size: 24px;
+  text-align: center;
+  padding-top: 7%;
+  color: #666;
 }
 
 .contact-links {
-  width: 100%;
+  padding-top: 7%;
 }
 
 .contact-col {
   display:inline-block;
   width: 33%;
+  color: #666;
 }
 
+.social {
+  font-weight: bold;
+  font-size: 24px;
+  color: #f46b22;
+}
+
+a:link {
+    text-decoration: none;
+    color: #f46b22;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #f46b22;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #dc5406;
+}
+
+a:active {
+    text-decoration: none;
+    color: #f46b22;
+}

@@ -20,7 +20,7 @@ const routes = [
 
 const App = () => (
   <Router>
-    <div>
+    <div className="app">
       <div>
         <Nav />
       </div>

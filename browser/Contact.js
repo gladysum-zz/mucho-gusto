@@ -12,21 +12,31 @@ const Contact = () => (
         Contact Me
       </div>
       <div className="contact-text">
-        Want to get in touch with me? Wanna collab? Send me your questions or requests using one of the emails below.
+        Want to collaborate? Want to learn more about me? <br/> Connect with me via any of the channels below.  I'd love to hear from you!
       </div>
       <div className="contact-links">
         <div className="contact-col">
-          LinkedIn<br/>
+          <div className="social">
+            <a href="https://www.linkedin.com/in/gladysum/" target="_blank">
+              LinkedIn
+            </a>
+          </div>
           linkedin.com/in/gladysum/
         </div>
 
         <div className="contact-col">
-          GitHub<br/>
+          <div className="social">
+            <a href="https://github.com/gladysum" target="_blank">
+              GitHub
+            </a>
+          </div>
           github.com/gladysum
         </div>
 
         <div className="contact-col">
-          Email<br/>
+          <div className="social">
+            Email
+          </div>
           gladysum (at) gmail (dot) com
         </div>
       </div>

@@ -23825,7 +23825,7 @@
 	}];
 	
 	var App = function App() {
-	  return _react2.default.createElement(_reactRouterDom.BrowserRouter, null, _react2.default.createElement('div', null, _react2.default.createElement('div', null, _react2.default.createElement(_Nav2.default, null)), _react2.default.createElement('div', null, routes.map(function (route, index) {
+	  return _react2.default.createElement(_reactRouterDom.BrowserRouter, null, _react2.default.createElement('div', { className: 'app' }, _react2.default.createElement('div', null, _react2.default.createElement(_Nav2.default, null)), _react2.default.createElement('div', null, routes.map(function (route, index) {
 	    return _react2.default.createElement(_reactRouterDom.Route, {
 	      key: index,
 	      path: route.path,
@@ -45085,7 +45085,7 @@
 	}
 	
 	var Contact = function Contact() {
-	  return _react2.default.createElement('div', { className: 'contact-background' }, _react2.default.createElement('div', { className: 'contact-col-left' }), _react2.default.createElement('div', { className: 'contact-col-middle' }, _react2.default.createElement('div', { className: 'contact-me' }, 'Contact Me'), _react2.default.createElement('div', { className: 'contact-text' }, 'Want to get in touch with me? Wanna collab? Send me your questions or requests using one of the emails below.'), _react2.default.createElement('div', { className: 'contact-links' }, _react2.default.createElement('div', { className: 'contact-col' }, 'LinkedIn', _react2.default.createElement('br', null), 'linkedin.com/in/gladysum/'), _react2.default.createElement('div', { className: 'contact-col' }, 'GitHub', _react2.default.createElement('br', null), 'github.com/gladysum'), _react2.default.createElement('div', { className: 'contact-col' }, 'Email', _react2.default.createElement('br', null), 'gladysum (at) gmail (dot) com'))), _react2.default.createElement('div', { className: 'contact-col-right' }));
+	  return _react2.default.createElement('div', { className: 'contact-background' }, _react2.default.createElement('div', { className: 'contact-col-left' }), _react2.default.createElement('div', { className: 'contact-col-middle' }, _react2.default.createElement('div', { className: 'contact-me' }, 'Contact Me'), _react2.default.createElement('div', { className: 'contact-text' }, 'Want to collaborate? Want to learn more about me? ', _react2.default.createElement('br', null), ' Connect with me via any of the channels below.  I\'d love to hear from you!'), _react2.default.createElement('div', { className: 'contact-links' }, _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, _react2.default.createElement('a', { href: 'https://www.linkedin.com/in/gladysum/', target: '_blank' }, 'LinkedIn')), 'linkedin.com/in/gladysum/'), _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, _react2.default.createElement('a', { href: 'https://github.com/gladysum', target: '_blank' }, 'GitHub')), 'github.com/gladysum'), _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, 'Email'), 'gladysum (at) gmail (dot) com'))), _react2.default.createElement('div', { className: 'contact-col-right' }));
 	};
 	
 	exports.default = Contact;
