@@ -45117,7 +45117,7 @@
 	}
 	
 	var About = function About() {
-	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'about-container' }, _react2.default.createElement('div', { className: 'bio' }, _react2.default.createElement('h2', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'Fullstack software developer proficient in JavaScript, Node.js, React, React-Redux, Express.js, Sequelize, PostgreSQL, Mocha, Chai, Jasmine, HTML, and CSS. Interests: Artificial intelligence, natural language processing, chatbots, IBM Watson Services'))));
+	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "330px", height: "330px" } })), _react2.default.createElement('div', { className: 'about-container' }, _react2.default.createElement('div', { className: 'bio' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'Fullstack software developer proficient in JavaScript, Node.js, React, React-Redux, Express.js, Sequelize, PostgreSQL, Mocha, Chai, Jasmine, HTML, and CSS. Interests: Artificial intelligence, natural language processing, chatbots, IBM Watson Services'))));
 	};
 	
 	exports.default = About;

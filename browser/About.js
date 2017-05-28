@@ -7,11 +7,15 @@ const About = () => (
       Meet the Team
     </div>
 
+    <div className="image-container">
+      <img src="./images/gladys.jpg" style={{width: "330px", height: "330px"}}/>
+    </div>
+
     <div className="about-container">
       <div className="bio">
-        <h2 id="name">Gladys Um</h2>
+        <p id="name">Gladys Um</p>
         <p>Fullstack software developer proficient in JavaScript, Node.js, React, React-Redux, Express.js, Sequelize, PostgreSQL, Mocha, Chai, Jasmine, HTML, and CSS.
-Interests: Artificial intelligence, natural language processing, chatbots, IBM Watson Services</p>
+          Interests: Artificial intelligence, natural language processing, chatbots, IBM Watson Services</p>
       </div>
     </div>
 

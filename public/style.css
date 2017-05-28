@@ -341,7 +341,6 @@ a:active {
   height: 700px;
   background-color: yellow;
   margin: 0 -1% -1% -1%;
-  text-align: center;
 }
 
 .about-title {
@@ -352,25 +351,43 @@ a:active {
   margin-bottom: 30px;
 }
 
+.image-container {
+  position: relative;
+  z-index: 2;
+  -ms-transform: rotate(-5deg); /* IE 9 */
+  -webkit-transform: rotate(-5deg); /* Safari */
+  transform: rotate(-5deg);
+  margin-left: 260px;
+}
+
 .about-container {
-  text-align: right;
   width: 720px;
+  height: 330px;
   display:inline-block;
   background-color: white;
   border-radius: 14px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 290px;
+  margin-top: -290px;
+
+
 }
 
 .bio {
   display:inline-block;
-  width: 45%;
   text-align: left;
-  padding-right: 4%;
-      line-height: 1.6em;
-      color: #666;
-      font-size: 18px;
+  line-height: 1.6em;
+  color: #666;
+  font-size: 18px;
+  padding-left: 360px;
+  padding-top: 20px;
+  padding-right: 30px;
 }
 
 #name {
   color: #f46b22;
-  font-size: 40px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: .1em;
 }
