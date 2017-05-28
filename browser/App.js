@@ -4,6 +4,7 @@ import Nav from './Nav'
 import Home from './Home'
 import Chat from './Chat'
 import Contact from './Contact'
+import About from './About'
 
 const routes = [
   { path: '/',
@@ -15,6 +16,9 @@ const routes = [
   },
   { path: '/contact',
     main: Contact
+  },
+  { path: '/about',
+    main: About
   }
 ]
 

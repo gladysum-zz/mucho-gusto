@@ -22,7 +22,9 @@ const Nav = ()=>(
         <div className="dropdown-content">
           <Link to={'/'} className="link" id="menu-link">HOME</Link>
           <Link to={'/chat'} className="link" id="menu-link">CHAT</Link>
+          <Link to={'/about'} className="link" id="menu-link">ABOUT</Link>
           <Link to={'/contact'} className="link" id="menu-link">CONTACT</Link>
+
         </div>
       </div>
 

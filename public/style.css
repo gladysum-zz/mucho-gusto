@@ -335,3 +335,19 @@ a:active {
     text-decoration: none;
     color: #f46b22;
 }
+
+/* ----- ABOUT PAGE----- */
+.about-background {
+  height: 700px;
+  background-color: yellow;
+  margin: 0 -1% -1% -1%;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 54px;
+  text-align: center;
+  color: #f46b22;
+  font-weight: bold;
+}
+
