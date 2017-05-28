@@ -378,7 +378,7 @@ a:active {
 
 .about-container-left {
   width: 720px;
-  height: 330px;
+
   display:inline-block;
   background-color: white;
   border-radius: 14px;
@@ -405,8 +405,8 @@ a:active {
   -webkit-transform: rotate(5deg); /* Safari */
   transform: rotate(5deg);
   text-align: right;
-  margin-right: -20px;
-  margin-bottom: -25px;
+  margin-right: 20px;
+  margin-bottom: -5px;
 }
 
 .about-container-right {
@@ -439,5 +439,5 @@ a:active {
 }
 
 .spacing {
-  height: 100px;
+  height: 150px;
 }
