@@ -1,7 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-const About = () => (
+export default class FAQS extends React.Component {
+  constructor() {
+    super();
+  }
+
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render() {
+    return (
   <div className="faqs-background">
     <div className="faqs-title">
     Frequently Asked Questions
@@ -33,6 +43,6 @@ const About = () => (
     </div>
     <div className="faqs-col-right"></div>
   </div>
-)
-
-export default About;
+    )
+  }
+}

@@ -1,7 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-const Contact = () => (
+export default class Contact extends React.Component {
+  constructor() {
+    super();
+  }
+
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render() {
+    return (
   <div className="contact-background">
 
     <div className="contact-col-left">
@@ -46,6 +56,7 @@ const Contact = () => (
 
 
   </div>
-)
+    )
+  }
+}
 
-export default Contact;

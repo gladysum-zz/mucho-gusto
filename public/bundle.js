@@ -34659,7 +34659,7 @@
 	}
 	
 	var Footer = function Footer() {
-	  return _react2.default.createElement('div', { className: 'footer' }, _react2.default.createElement('div', { className: 'footer-content' }, _react2.default.createElement('div', { className: 'footer-col' }), _react2.default.createElement('div', { className: 'footer-col' }, 'Mucho Gusto', _react2.default.createElement('br', null), 'Team', _react2.default.createElement('br', null), 'FAQS', _react2.default.createElement('br', null), 'Contact', _react2.default.createElement('div', { className: 'copyright' }, '\xA9 2017 Gladys Um')), _react2.default.createElement('div', { className: 'footer-col' }, 'Connect', _react2.default.createElement('br', null), 'LinkedIn', _react2.default.createElement('br', null), 'GitHub'), _react2.default.createElement('div', { className: 'footer-col' }, _react2.default.createElement('img', { src: './images/penguin-computer.jpg', style: { width: "190px", height: "120px" } })), _react2.default.createElement('div', { className: 'footer-col' })));
+	  return _react2.default.createElement('div', { className: 'footer' }, _react2.default.createElement('div', { className: 'footer-content' }, _react2.default.createElement('div', { className: 'footer-col-edge' }), _react2.default.createElement('div', { className: 'footer-col-1' }, _react2.default.createElement('div', { className: 'small-title' }, ' Mucho Gusto'), _react2.default.createElement(_reactRouterDom.Link, { to: '/faqs' }, 'FAQS'), _react2.default.createElement('br', null), _react2.default.createElement(_reactRouterDom.Link, { to: '/team' }, 'TEAM'), _react2.default.createElement('br', null), _react2.default.createElement(_reactRouterDom.Link, { to: '/contact' }, 'CONTACT'), _react2.default.createElement('br', null), _react2.default.createElement('div', { className: 'copyright' }, '\xA9 2017 Gladys Um')), _react2.default.createElement('div', { className: 'footer-col-2' }, _react2.default.createElement('div', { className: 'small-title' }, 'Connect'), 'LinkedIn', _react2.default.createElement('br', null), 'GitHub'), _react2.default.createElement('div', { className: 'footer-col-3' }, _react2.default.createElement('img', { src: './images/penguin-computer.jpg', style: { width: "190px", height: "120px" } })), _react2.default.createElement('div', { className: 'footer-col-edge' })));
 	};
 	
 	exports.default = Footer;
@@ -39837,9 +39837,21 @@
 
 	'use strict';
 	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
 	
 	var _react = __webpack_require__(1);
 	
@@ -39851,9 +39863,47 @@
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	var Contact = function Contact() {
-	  return _react2.default.createElement('div', { className: 'contact-background' }, _react2.default.createElement('div', { className: 'contact-col-left' }), _react2.default.createElement('div', { className: 'contact-col-middle' }, _react2.default.createElement('div', { className: 'contact-me' }, 'Contact Gladys'), _react2.default.createElement('div', { className: 'contact-text' }, 'Want to collaborate? Want to learn more about me? ', _react2.default.createElement('br', null), ' Connect with me via any of the channels below.  I\'d love to hear from you!'), _react2.default.createElement('div', { className: 'contact-links' }, _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, 'Email'), 'gladysum (at) gmail (dot) com'), _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, _react2.default.createElement('a', { href: 'https://www.linkedin.com/in/gladysum/', target: '_blank' }, 'LinkedIn')), 'linkedin.com/in/gladysum/'), _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, _react2.default.createElement('a', { href: 'https://github.com/gladysum', target: '_blank' }, 'GitHub')), 'github.com/gladysum'))), _react2.default.createElement('div', { className: 'contact-col-right' }));
-	};
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+	
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+	
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+	
+	var Contact = function (_React$Component) {
+	  _inherits(Contact, _React$Component);
+	
+	  function Contact() {
+	    _classCallCheck(this, Contact);
+	
+	    return _possibleConstructorReturn(this, (Contact.__proto__ || Object.getPrototypeOf(Contact)).call(this));
+	  }
+	
+	  _createClass(Contact, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('div', { className: 'contact-background' }, _react2.default.createElement('div', { className: 'contact-col-left' }), _react2.default.createElement('div', { className: 'contact-col-middle' }, _react2.default.createElement('div', { className: 'contact-me' }, 'Contact Gladys'), _react2.default.createElement('div', { className: 'contact-text' }, 'Want to collaborate? Want to learn more about me? ', _react2.default.createElement('br', null), ' Connect with me via any of the channels below.  I\'d love to hear from you!'), _react2.default.createElement('div', { className: 'contact-links' }, _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, 'Email'), 'gladysum (at) gmail (dot) com'), _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, _react2.default.createElement('a', { href: 'https://www.linkedin.com/in/gladysum/', target: '_blank' }, 'LinkedIn')), 'linkedin.com/in/gladysum/'), _react2.default.createElement('div', { className: 'contact-col' }, _react2.default.createElement('div', { className: 'social' }, _react2.default.createElement('a', { href: 'https://github.com/gladysum', target: '_blank' }, 'GitHub')), 'github.com/gladysum'))), _react2.default.createElement('div', { className: 'contact-col-right' }));
+	    }
+	  }]);
+	
+	  return Contact;
+	}(_react2.default.Component);
 	
 	exports.default = Contact;
 
@@ -39864,9 +39914,21 @@
 
 	'use strict';
 	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
 	
 	var _react = __webpack_require__(1);
 	
@@ -39878,11 +39940,49 @@
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	var About = function About() {
-	  return _react2.default.createElement('div', { className: 'faqs-background' }, _react2.default.createElement('div', { className: 'faqs-title' }, 'Frequently Asked Questions'), _react2.default.createElement('div', { className: 'faqs-col-left' }), _react2.default.createElement('div', { className: 'faqs-col-middle' }, _react2.default.createElement('div', { className: 'faqs-container' }, _react2.default.createElement('div', { className: 'question' }, 'What is Mucho Gusto?'), _react2.default.createElement('div', { className: 'answer' }, 'Mucho Gusto is a language-learning app that uses artifical intelligence. It\'s powered by IBM Watson Conversation Service, which provides natural language processing capabilities.'), _react2.default.createElement('div', { className: 'question' }, 'What is Paco?'), _react2.default.createElement('div', { className: 'answer' }, 'I\'m a penguin. I\'m also a Spanish-language chatbot. I\'m here to help you practice your Spanish conversation skills.'), _react2.default.createElement('div', { className: 'question' }, 'How do I start chatting with you?'), _react2.default.createElement('div', { className: 'answer' }, 'Go to the menu icon on the top-right corner and select "CHAT".'))), _react2.default.createElement('div', { className: 'faqs-col-right' }));
-	};
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
 	
-	exports.default = About;
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+	
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+	
+	var FAQS = function (_React$Component) {
+	  _inherits(FAQS, _React$Component);
+	
+	  function FAQS() {
+	    _classCallCheck(this, FAQS);
+	
+	    return _possibleConstructorReturn(this, (FAQS.__proto__ || Object.getPrototypeOf(FAQS)).call(this));
+	  }
+	
+	  _createClass(FAQS, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('div', { className: 'faqs-background' }, _react2.default.createElement('div', { className: 'faqs-title' }, 'Frequently Asked Questions'), _react2.default.createElement('div', { className: 'faqs-col-left' }), _react2.default.createElement('div', { className: 'faqs-col-middle' }, _react2.default.createElement('div', { className: 'faqs-container' }, _react2.default.createElement('div', { className: 'question' }, 'What is Mucho Gusto?'), _react2.default.createElement('div', { className: 'answer' }, 'Mucho Gusto is a language-learning app that uses artifical intelligence. It\'s powered by IBM Watson Conversation Service, which provides natural language processing capabilities.'), _react2.default.createElement('div', { className: 'question' }, 'What is Paco?'), _react2.default.createElement('div', { className: 'answer' }, 'I\'m a penguin. I\'m also a Spanish-language chatbot. I\'m here to help you practice your Spanish conversation skills.'), _react2.default.createElement('div', { className: 'question' }, 'How do I start chatting with you?'), _react2.default.createElement('div', { className: 'answer' }, 'Go to the menu icon on the top-right corner and select "CHAT".'))), _react2.default.createElement('div', { className: 'faqs-col-right' }));
+	    }
+	  }]);
+	
+	  return FAQS;
+	}(_react2.default.Component);
+	
+	exports.default = FAQS;
 
 /***/ }),
 /* 442 */
@@ -45165,9 +45265,21 @@
 
 	'use strict';
 	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
+	
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
 	
 	var _react = __webpack_require__(1);
 	
@@ -45179,9 +45291,47 @@
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	var Team = function Team() {
-	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container-left' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "340px", height: "340px" } })), _react2.default.createElement('div', { className: 'about-container-left' }, _react2.default.createElement('div', { className: 'bio-left' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'I\'m a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I\'m also fluent in Spanish and French.'))), _react2.default.createElement('div', { className: 'spacing' }), _react2.default.createElement('div', { className: 'image-container-right' }, _react2.default.createElement('img', { src: './images/penguin-square.jpg', style: { width: "280px", height: "280px" } })), _react2.default.createElement('div', { className: 'about-container-right' }, _react2.default.createElement('div', { className: 'bio-right' }, _react2.default.createElement('p', { id: 'name' }, 'Paco'), _react2.default.createElement('p', null, 'Hola amigos! I\'m a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin\' on the Patagonian coast. ')))), _react2.default.createElement('div', { className: 'about-col-right' }));
-	};
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+	
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+	
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+	
+	var Team = function (_React$Component) {
+	  _inherits(Team, _React$Component);
+	
+	  function Team() {
+	    _classCallCheck(this, Team);
+	
+	    return _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).call(this));
+	  }
+	
+	  _createClass(Team, [{
+	    key: 'componentWillMount',
+	    value: function componentWillMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container-left' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "340px", height: "340px" } })), _react2.default.createElement('div', { className: 'about-container-left' }, _react2.default.createElement('div', { className: 'bio-left' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'I\'m a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I\'m also fluent in Spanish and French.'))), _react2.default.createElement('div', { className: 'spacing' }), _react2.default.createElement('div', { className: 'image-container-right' }, _react2.default.createElement('img', { src: './images/penguin-square.jpg', style: { width: "280px", height: "280px" } })), _react2.default.createElement('div', { className: 'about-container-right' }, _react2.default.createElement('div', { className: 'bio-right' }, _react2.default.createElement('p', { id: 'name' }, 'Paco'), _react2.default.createElement('p', null, 'Hola amigos! I\'m a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin\' on the Patagonian coast. ')))), _react2.default.createElement('div', { className: 'about-col-right' }));
+	    }
+	  }]);
+	
+	  return Team;
+	}(_react2.default.Component);
 	
 	exports.default = Team;
 

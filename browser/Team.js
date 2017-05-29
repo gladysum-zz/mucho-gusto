@@ -1,7 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-const Team = () => (
+export default class Team extends React.Component {
+  constructor() {
+    super();
+  }
+
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render() {
+    return (
   <div className="about-background">
     <div className="about-col-left"></div>
     <div className="about-col-middle">
@@ -36,6 +46,7 @@ const Team = () => (
     </div>
     <div className="about-col-right"></div>
   </div>
-)
+    )
+  }
+}
 
-export default Team;

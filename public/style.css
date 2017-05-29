@@ -505,10 +505,36 @@ a:active {
   padding-bottom: 10px;
 }
 
-.footer-col {
+.footer-col-1 {
   vertical-align: top;
   display:inline-block;
-  width: 19%;
+  width: 20%;
+}
+
+.footer-col-2 {
+  vertical-align: top;
+  display:inline-block;
+  width: 16%;
+}
+
+.footer-col-3 {
+  vertical-align: top;
+  display:inline-block;
+  width: 18%;
+}
+
+.footer-col-edge {
+  vertical-align: top;
+  display:inline-block;
+  width: 23%;
+}
+
+.small-title {
+  color: #f46b22;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.8em;
 }
 
 .copyright {
