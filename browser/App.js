@@ -1,6 +1,7 @@
 import React from 'react'
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import Nav from './Nav'
+import Footer from './Footer'
 import Home from './Home'
 import Chat from './Chat'
 import Contact from './Contact'
@@ -29,10 +30,9 @@ const routes = [
 const App = () => (
   <Router>
     <div className="app">
-      <div>
+
         <Nav />
-      </div>
-      <div>
+
         {routes.map((route, index) => (
           <Route
             key={index}
@@ -41,7 +41,9 @@ const App = () => (
             component={route.main}
           />
         ))}
-      </div>
+
+        <Footer />
+
     </div>
   </Router>
 )

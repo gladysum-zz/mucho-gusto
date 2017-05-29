@@ -4,7 +4,6 @@ import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import IconButton from 'material-ui/IconButton';
 
-
 const Nav = ()=>(
   <div className="nav">
     <div className="nav-col-left">

@@ -60,7 +60,7 @@
 	
 	var _App2 = _interopRequireDefault(_App);
 	
-	var _MuiThemeProvider = __webpack_require__(439);
+	var _MuiThemeProvider = __webpack_require__(441);
 	
 	var _MuiThemeProvider2 = _interopRequireDefault(_MuiThemeProvider);
 	
@@ -23799,6 +23799,10 @@
 	
 	var _Nav2 = _interopRequireDefault(_Nav);
 	
+	var _Footer = __webpack_require__(485);
+	
+	var _Footer2 = _interopRequireDefault(_Footer);
+	
 	var _Home = __webpack_require__(379);
 	
 	var _Home2 = _interopRequireDefault(_Home);
@@ -23811,11 +23815,11 @@
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _About = __webpack_require__(483);
+	var _About = __webpack_require__(439);
 	
 	var _About2 = _interopRequireDefault(_About);
 	
-	var _FAQS = __webpack_require__(484);
+	var _FAQS = __webpack_require__(440);
 	
 	var _FAQS2 = _interopRequireDefault(_FAQS);
 	
@@ -23837,14 +23841,14 @@
 	}];
 	
 	var App = function App() {
-	  return _react2.default.createElement(_reactRouterDom.BrowserRouter, null, _react2.default.createElement('div', { className: 'app' }, _react2.default.createElement('div', null, _react2.default.createElement(_Nav2.default, null)), _react2.default.createElement('div', null, routes.map(function (route, index) {
+	  return _react2.default.createElement(_reactRouterDom.BrowserRouter, null, _react2.default.createElement('div', { className: 'app' }, _react2.default.createElement(_Nav2.default, null), routes.map(function (route, index) {
 	    return _react2.default.createElement(_reactRouterDom.Route, {
 	      key: index,
 	      path: route.path,
 	      exact: route.exact,
 	      component: route.main
 	    });
-	  }))));
+	  }), _react2.default.createElement(_Footer2.default, null)));
 	};
 	
 	exports.default = App;
@@ -39837,6 +39841,58 @@
 	  value: true
 	});
 	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouterDom = __webpack_require__(168);
+	
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var About = function About() {
+	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container-left' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "340px", height: "340px" } })), _react2.default.createElement('div', { className: 'about-container-left' }, _react2.default.createElement('div', { className: 'bio-left' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'I\'m a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I\'m also fluent in Spanish and French.'))), _react2.default.createElement('div', { className: 'spacing' }), _react2.default.createElement('div', { className: 'image-container-right' }, _react2.default.createElement('img', { src: './images/penguin-square.jpg', style: { width: "280px", height: "280px" } })), _react2.default.createElement('div', { className: 'about-container-right' }, _react2.default.createElement('div', { className: 'bio-right' }, _react2.default.createElement('p', { id: 'name' }, 'Paco'), _react2.default.createElement('p', null, 'Hola amigos! I\'m a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin\' on the Patagonian coast. ')))), _react2.default.createElement('div', { className: 'about-col-right' }));
+	};
+	
+	exports.default = About;
+
+/***/ }),
+/* 440 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouterDom = __webpack_require__(168);
+	
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var About = function About() {
+	  return _react2.default.createElement('div', { className: 'faqs-background' }, _react2.default.createElement('div', { className: 'faqs-title' }, 'Frequently Asked Questions'), _react2.default.createElement('div', { className: 'faqs-col-left' }), _react2.default.createElement('div', { className: 'faqs-col-middle' }, _react2.default.createElement('div', { className: 'faqs-container' }, _react2.default.createElement('div', { className: 'question' }, 'What is Mucho Gusto?'), _react2.default.createElement('div', { className: 'answer' }, 'Mucho Gusto is a language-learning app that uses artifical intelligence. It\'s powered by IBM Watson Conversation Service, which provides natural language processing capabilities.'), _react2.default.createElement('div', { className: 'question' }, 'What is Paco?'), _react2.default.createElement('div', { className: 'answer' }, 'I\'m a penguin. I\'m also a Spanish-language chatbot. I\'m here to help you practice your Spanish conversation skills.'), _react2.default.createElement('div', { className: 'question' }, 'How do I start chatting with you?'), _react2.default.createElement('div', { className: 'answer' }, 'Go to the menu icon on the top-right corner and select "CHAT".'))), _react2.default.createElement('div', { className: 'faqs-col-right' }));
+	};
+	
+	exports.default = About;
+
+/***/ }),
+/* 441 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
 	var _getPrototypeOf = __webpack_require__(251);
 	
 	var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -39863,7 +39919,7 @@
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _getMuiTheme = __webpack_require__(440);
+	var _getMuiTheme = __webpack_require__(442);
 	
 	var _getMuiTheme2 = _interopRequireDefault(_getMuiTheme);
 	
@@ -39903,7 +39959,7 @@
 	exports.default = MuiThemeProvider;
 
 /***/ }),
-/* 440 */
+/* 442 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -39918,41 +39974,41 @@
 	
 	exports.default = getMuiTheme;
 	
-	var _lodash = __webpack_require__(441);
+	var _lodash = __webpack_require__(443);
 	
 	var _lodash2 = _interopRequireDefault(_lodash);
 	
 	var _colorManipulator = __webpack_require__(355);
 	
-	var _lightBaseTheme = __webpack_require__(443);
+	var _lightBaseTheme = __webpack_require__(445);
 	
 	var _lightBaseTheme2 = _interopRequireDefault(_lightBaseTheme);
 	
-	var _zIndex = __webpack_require__(446);
+	var _zIndex = __webpack_require__(448);
 	
 	var _zIndex2 = _interopRequireDefault(_zIndex);
 	
-	var _autoprefixer = __webpack_require__(447);
+	var _autoprefixer = __webpack_require__(449);
 	
 	var _autoprefixer2 = _interopRequireDefault(_autoprefixer);
 	
-	var _callOnce = __webpack_require__(479);
+	var _callOnce = __webpack_require__(481);
 	
 	var _callOnce2 = _interopRequireDefault(_callOnce);
 	
-	var _rtl = __webpack_require__(480);
+	var _rtl = __webpack_require__(482);
 	
 	var _rtl2 = _interopRequireDefault(_rtl);
 	
-	var _compose = __webpack_require__(481);
+	var _compose = __webpack_require__(483);
 	
 	var _compose2 = _interopRequireDefault(_compose);
 	
-	var _typography = __webpack_require__(482);
+	var _typography = __webpack_require__(484);
 	
 	var _typography2 = _interopRequireDefault(_typography);
 	
-	var _colors = __webpack_require__(444);
+	var _colors = __webpack_require__(446);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -40287,7 +40343,7 @@
 	}
 
 /***/ }),
-/* 441 */
+/* 443 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(module) {/**
@@ -42498,10 +42554,10 @@
 	
 	module.exports = merge;
 	
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(442)(module)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(444)(module)))
 
 /***/ }),
-/* 442 */
+/* 444 */
 /***/ (function(module, exports) {
 
 	module.exports = function(module) {
@@ -42517,7 +42573,7 @@
 
 
 /***/ }),
-/* 443 */
+/* 445 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42526,11 +42582,11 @@
 	  value: true
 	});
 	
-	var _colors = __webpack_require__(444);
+	var _colors = __webpack_require__(446);
 	
 	var _colorManipulator = __webpack_require__(355);
 	
-	var _spacing = __webpack_require__(445);
+	var _spacing = __webpack_require__(447);
 	
 	var _spacing2 = _interopRequireDefault(_spacing);
 	
@@ -42567,7 +42623,7 @@
 	    */
 
 /***/ }),
-/* 444 */
+/* 446 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -42862,7 +42918,7 @@
 	var lightWhite = exports.lightWhite = 'rgba(255, 255, 255, 0.54)';
 
 /***/ }),
-/* 445 */
+/* 447 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -42886,7 +42942,7 @@
 	};
 
 /***/ }),
-/* 446 */
+/* 448 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -42908,7 +42964,7 @@
 	};
 
 /***/ }),
-/* 447 */
+/* 449 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -42967,19 +43023,19 @@
 	  }
 	};
 	
-	var _createPrefixer = __webpack_require__(448);
+	var _createPrefixer = __webpack_require__(450);
 	
 	var _createPrefixer2 = _interopRequireDefault(_createPrefixer);
 	
-	var _createPrefixer3 = __webpack_require__(454);
+	var _createPrefixer3 = __webpack_require__(456);
 	
 	var _createPrefixer4 = _interopRequireDefault(_createPrefixer3);
 	
-	var _autoprefixerDynamic = __webpack_require__(459);
+	var _autoprefixerDynamic = __webpack_require__(461);
 	
 	var _autoprefixerDynamic2 = _interopRequireDefault(_autoprefixerDynamic);
 	
-	var _autoprefixerStatic = __webpack_require__(470);
+	var _autoprefixerStatic = __webpack_require__(472);
 	
 	var _autoprefixerStatic2 = _interopRequireDefault(_autoprefixerStatic);
 	
@@ -42992,7 +43048,7 @@
 	var hasWarnedAboutUserAgent = false;
 
 /***/ }),
-/* 448 */
+/* 450 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43002,19 +43058,19 @@
 	});
 	exports.default = createPrefixer;
 	
-	var _prefixProperty = __webpack_require__(449);
+	var _prefixProperty = __webpack_require__(451);
 	
 	var _prefixProperty2 = _interopRequireDefault(_prefixProperty);
 	
-	var _prefixValue = __webpack_require__(451);
+	var _prefixValue = __webpack_require__(453);
 	
 	var _prefixValue2 = _interopRequireDefault(_prefixValue);
 	
-	var _addNewValuesOnly = __webpack_require__(452);
+	var _addNewValuesOnly = __webpack_require__(454);
 	
 	var _addNewValuesOnly2 = _interopRequireDefault(_addNewValuesOnly);
 	
-	var _isObject = __webpack_require__(453);
+	var _isObject = __webpack_require__(455);
 	
 	var _isObject2 = _interopRequireDefault(_isObject);
 	
@@ -43066,7 +43122,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 449 */
+/* 451 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43076,7 +43132,7 @@
 	});
 	exports.default = prefixProperty;
 	
-	var _capitalizeString = __webpack_require__(450);
+	var _capitalizeString = __webpack_require__(452);
 	
 	var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 	
@@ -43093,7 +43149,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 450 */
+/* 452 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -43108,7 +43164,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 451 */
+/* 453 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -43131,7 +43187,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 452 */
+/* 454 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -43158,7 +43214,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 453 */
+/* 455 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -43173,7 +43229,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 454 */
+/* 456 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43186,27 +43242,27 @@
 	
 	exports.default = createPrefixer;
 	
-	var _getBrowserInformation = __webpack_require__(455);
+	var _getBrowserInformation = __webpack_require__(457);
 	
 	var _getBrowserInformation2 = _interopRequireDefault(_getBrowserInformation);
 	
-	var _getPrefixedKeyframes = __webpack_require__(458);
+	var _getPrefixedKeyframes = __webpack_require__(460);
 	
 	var _getPrefixedKeyframes2 = _interopRequireDefault(_getPrefixedKeyframes);
 	
-	var _capitalizeString = __webpack_require__(450);
+	var _capitalizeString = __webpack_require__(452);
 	
 	var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 	
-	var _addNewValuesOnly = __webpack_require__(452);
+	var _addNewValuesOnly = __webpack_require__(454);
 	
 	var _addNewValuesOnly2 = _interopRequireDefault(_addNewValuesOnly);
 	
-	var _isObject = __webpack_require__(453);
+	var _isObject = __webpack_require__(455);
 	
 	var _isObject2 = _interopRequireDefault(_isObject);
 	
-	var _prefixValue = __webpack_require__(451);
+	var _prefixValue = __webpack_require__(453);
 	
 	var _prefixValue2 = _interopRequireDefault(_prefixValue);
 	
@@ -43353,7 +43409,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 455 */
+/* 457 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -43363,7 +43419,7 @@
 	});
 	exports.default = getBrowserInformation;
 	
-	var _bowser = __webpack_require__(456);
+	var _bowser = __webpack_require__(458);
 	
 	var _bowser2 = _interopRequireDefault(_bowser);
 	
@@ -43485,7 +43541,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 456 */
+/* 458 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/*!
@@ -43496,7 +43552,7 @@
 	
 	!function (root, name, definition) {
 	  if (typeof module != 'undefined' && module.exports) module.exports = definition()
-	  else if (true) __webpack_require__(457)(name, definition)
+	  else if (true) __webpack_require__(459)(name, definition)
 	  else root[name] = definition()
 	}(this, 'bowser', function () {
 	  /**
@@ -44071,14 +44127,14 @@
 
 
 /***/ }),
-/* 457 */
+/* 459 */
 /***/ (function(module, exports) {
 
 	module.exports = function() { throw new Error("define cannot be used indirect"); };
 
 
 /***/ }),
-/* 458 */
+/* 460 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -44098,7 +44154,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 459 */
+/* 461 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44107,31 +44163,31 @@
 	  value: true
 	});
 	
-	var _calc = __webpack_require__(460);
+	var _calc = __webpack_require__(462);
 	
 	var _calc2 = _interopRequireDefault(_calc);
 	
-	var _flex = __webpack_require__(462);
+	var _flex = __webpack_require__(464);
 	
 	var _flex2 = _interopRequireDefault(_flex);
 	
-	var _flexboxIE = __webpack_require__(463);
+	var _flexboxIE = __webpack_require__(465);
 	
 	var _flexboxIE2 = _interopRequireDefault(_flexboxIE);
 	
-	var _flexboxOld = __webpack_require__(464);
+	var _flexboxOld = __webpack_require__(466);
 	
 	var _flexboxOld2 = _interopRequireDefault(_flexboxOld);
 	
-	var _gradient = __webpack_require__(465);
+	var _gradient = __webpack_require__(467);
 	
 	var _gradient2 = _interopRequireDefault(_gradient);
 	
-	var _sizing = __webpack_require__(466);
+	var _sizing = __webpack_require__(468);
 	
 	var _sizing2 = _interopRequireDefault(_sizing);
 	
-	var _transition = __webpack_require__(467);
+	var _transition = __webpack_require__(469);
 	
 	var _transition2 = _interopRequireDefault(_transition);
 	
@@ -44143,7 +44199,7 @@
 	}; /* eslint-disable */
 
 /***/ }),
-/* 460 */
+/* 462 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44153,7 +44209,7 @@
 	});
 	exports.default = calc;
 	
-	var _getPrefixedValue = __webpack_require__(461);
+	var _getPrefixedValue = __webpack_require__(463);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -44172,7 +44228,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 461 */
+/* 463 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -44190,7 +44246,7 @@
 	module.exports = exports["default"];
 
 /***/ }),
-/* 462 */
+/* 464 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44200,7 +44256,7 @@
 	});
 	exports.default = flex;
 	
-	var _getPrefixedValue = __webpack_require__(461);
+	var _getPrefixedValue = __webpack_require__(463);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -44223,7 +44279,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 463 */
+/* 465 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44233,7 +44289,7 @@
 	});
 	exports.default = flexboxIE;
 	
-	var _getPrefixedValue = __webpack_require__(461);
+	var _getPrefixedValue = __webpack_require__(463);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -44283,7 +44339,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 464 */
+/* 466 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44293,7 +44349,7 @@
 	});
 	exports.default = flexboxOld;
 	
-	var _getPrefixedValue = __webpack_require__(461);
+	var _getPrefixedValue = __webpack_require__(463);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -44356,7 +44412,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 465 */
+/* 467 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44366,7 +44422,7 @@
 	});
 	exports.default = gradient;
 	
-	var _getPrefixedValue = __webpack_require__(461);
+	var _getPrefixedValue = __webpack_require__(463);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -44386,7 +44442,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 466 */
+/* 468 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44396,7 +44452,7 @@
 	});
 	exports.default = sizing;
 	
-	var _getPrefixedValue = __webpack_require__(461);
+	var _getPrefixedValue = __webpack_require__(463);
 	
 	var _getPrefixedValue2 = _interopRequireDefault(_getPrefixedValue);
 	
@@ -44434,7 +44490,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 467 */
+/* 469 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44447,7 +44503,7 @@
 	
 	exports.default = transition;
 	
-	var _hyphenateProperty = __webpack_require__(468);
+	var _hyphenateProperty = __webpack_require__(470);
 	
 	var _hyphenateProperty2 = _interopRequireDefault(_hyphenateProperty);
 	
@@ -44500,7 +44556,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 468 */
+/* 470 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44510,7 +44566,7 @@
 	});
 	exports.default = hyphenateProperty;
 	
-	var _hyphenateStyleName = __webpack_require__(469);
+	var _hyphenateStyleName = __webpack_require__(471);
 	
 	var _hyphenateStyleName2 = _interopRequireDefault(_hyphenateStyleName);
 	
@@ -44522,7 +44578,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 469 */
+/* 471 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -44544,7 +44600,7 @@
 
 
 /***/ }),
-/* 470 */
+/* 472 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44553,31 +44609,31 @@
 	  value: true
 	});
 	
-	var _calc = __webpack_require__(471);
+	var _calc = __webpack_require__(473);
 	
 	var _calc2 = _interopRequireDefault(_calc);
 	
-	var _flex = __webpack_require__(473);
+	var _flex = __webpack_require__(475);
 	
 	var _flex2 = _interopRequireDefault(_flex);
 	
-	var _flexboxIE = __webpack_require__(474);
+	var _flexboxIE = __webpack_require__(476);
 	
 	var _flexboxIE2 = _interopRequireDefault(_flexboxIE);
 	
-	var _flexboxOld = __webpack_require__(475);
+	var _flexboxOld = __webpack_require__(477);
 	
 	var _flexboxOld2 = _interopRequireDefault(_flexboxOld);
 	
-	var _gradient = __webpack_require__(476);
+	var _gradient = __webpack_require__(478);
 	
 	var _gradient2 = _interopRequireDefault(_gradient);
 	
-	var _sizing = __webpack_require__(477);
+	var _sizing = __webpack_require__(479);
 	
 	var _sizing2 = _interopRequireDefault(_sizing);
 	
-	var _transition = __webpack_require__(478);
+	var _transition = __webpack_require__(480);
 	
 	var _transition2 = _interopRequireDefault(_transition);
 	
@@ -44589,7 +44645,7 @@
 	}; /* eslint-disable */
 
 /***/ }),
-/* 471 */
+/* 473 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44599,7 +44655,7 @@
 	});
 	exports.default = calc;
 	
-	var _isPrefixedValue = __webpack_require__(472);
+	var _isPrefixedValue = __webpack_require__(474);
 	
 	var _isPrefixedValue2 = _interopRequireDefault(_isPrefixedValue);
 	
@@ -44616,7 +44672,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 472 */
+/* 474 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -44634,7 +44690,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 473 */
+/* 475 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -44656,7 +44712,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 474 */
+/* 476 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -44690,7 +44746,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 475 */
+/* 477 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -44734,7 +44790,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 476 */
+/* 478 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44744,7 +44800,7 @@
 	});
 	exports.default = gradient;
 	
-	var _isPrefixedValue = __webpack_require__(472);
+	var _isPrefixedValue = __webpack_require__(474);
 	
 	var _isPrefixedValue2 = _interopRequireDefault(_isPrefixedValue);
 	
@@ -44764,7 +44820,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 477 */
+/* 479 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -44802,7 +44858,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 478 */
+/* 480 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44812,15 +44868,15 @@
 	});
 	exports.default = transition;
 	
-	var _hyphenateProperty = __webpack_require__(468);
+	var _hyphenateProperty = __webpack_require__(470);
 	
 	var _hyphenateProperty2 = _interopRequireDefault(_hyphenateProperty);
 	
-	var _isPrefixedValue = __webpack_require__(472);
+	var _isPrefixedValue = __webpack_require__(474);
 	
 	var _isPrefixedValue2 = _interopRequireDefault(_isPrefixedValue);
 	
-	var _capitalizeString = __webpack_require__(450);
+	var _capitalizeString = __webpack_require__(452);
 	
 	var _capitalizeString2 = _interopRequireDefault(_capitalizeString);
 	
@@ -44900,7 +44956,7 @@
 	module.exports = exports['default'];
 
 /***/ }),
-/* 479 */
+/* 481 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -44931,7 +44987,7 @@
 	}
 
 /***/ }),
-/* 480 */
+/* 482 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45033,7 +45089,7 @@
 	}
 
 /***/ }),
-/* 481 */
+/* 483 */
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -45063,7 +45119,7 @@
 	}
 
 /***/ }),
-/* 482 */
+/* 484 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45076,7 +45132,7 @@
 	
 	var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
 	
-	var _colors = __webpack_require__(444);
+	var _colors = __webpack_require__(446);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -45103,7 +45159,7 @@
 	exports.default = new Typography();
 
 /***/ }),
-/* 483 */
+/* 485 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -45122,37 +45178,11 @@
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
-	var About = function About() {
-	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container-left' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "340px", height: "340px" } })), _react2.default.createElement('div', { className: 'about-container-left' }, _react2.default.createElement('div', { className: 'bio-left' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'I\'m a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I\'m also fluent in Spanish and French.'))), _react2.default.createElement('div', { className: 'spacing' }), _react2.default.createElement('div', { className: 'image-container-right' }, _react2.default.createElement('img', { src: './images/penguin-square.jpg', style: { width: "280px", height: "280px" } })), _react2.default.createElement('div', { className: 'about-container-right' }, _react2.default.createElement('div', { className: 'bio-right' }, _react2.default.createElement('p', { id: 'name' }, 'Paco'), _react2.default.createElement('p', null, 'Hola amigos! I\'m a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin\' on the Patagonian coast. ')))), _react2.default.createElement('div', { className: 'about-col-right' }));
+	var Footer = function Footer() {
+	  return _react2.default.createElement('div', { className: 'footer' }, _react2.default.createElement('div', { className: 'footer-content' }, _react2.default.createElement('div', { className: 'footer-col' }), _react2.default.createElement('div', { className: 'footer-col' }, 'Mucho Gusto', _react2.default.createElement('br', null), 'About', _react2.default.createElement('br', null), 'FAQS', _react2.default.createElement('br', null), 'Contact', _react2.default.createElement('div', { className: 'copyright' }, '\xA9 2017 Gladys Um')), _react2.default.createElement('div', { className: 'footer-col' }, 'Connect', _react2.default.createElement('br', null), 'LinkedIn', _react2.default.createElement('br', null), 'GitHub'), _react2.default.createElement('div', { className: 'footer-col' }, _react2.default.createElement('img', { src: './images/penguin-computer.jpg', style: { width: "190px", height: "120px" } })), _react2.default.createElement('div', { className: 'footer-col' })));
 	};
 	
-	exports.default = About;
-
-/***/ }),
-/* 484 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouterDom = __webpack_require__(168);
-	
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var About = function About() {
-	  return _react2.default.createElement('div', { className: 'faqs-background' }, _react2.default.createElement('div', { className: 'faqs-title' }, 'Frequently Asked Questions'), _react2.default.createElement('div', { className: 'faqs-col-left' }), _react2.default.createElement('div', { className: 'faqs-col-middle' }, _react2.default.createElement('div', { className: 'faqs-container' }, _react2.default.createElement('div', { className: 'question' }, 'What is Mucho Gusto?'), _react2.default.createElement('div', { className: 'answer' }, 'Mucho Gusto is a language-learning app that uses artifical intelligence. It\'s powered by IBM Watson Conversation Service, which provides natural language processing capabilities.'), _react2.default.createElement('div', { className: 'question' }, 'What is Paco?'), _react2.default.createElement('div', { className: 'answer' }, 'I\'m a penguin. I\'m also a Spanish-language chatbot. I\'m here to help you practice your Spanish conversation skills.'), _react2.default.createElement('div', { className: 'question' }, 'How do I start chatting with you?'), _react2.default.createElement('div', { className: 'answer' }, 'Go to the menu icon on the top-right corner and select "CHAT".'))), _react2.default.createElement('div', { className: 'faqs-col-right' }));
-	};
-	
-	exports.default = About;
+	exports.default = Footer;
 
 /***/ })
 /******/ ]);
