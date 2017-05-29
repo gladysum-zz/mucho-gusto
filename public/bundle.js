@@ -23815,6 +23815,10 @@
 	
 	var _About2 = _interopRequireDefault(_About);
 	
+	var _FAQS = __webpack_require__(484);
+	
+	var _FAQS2 = _interopRequireDefault(_FAQS);
+	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
@@ -23828,6 +23832,8 @@
 	  main: _Contact2.default
 	}, { path: '/about',
 	  main: _About2.default
+	}, { path: '/faqs',
+	  main: _FAQS2.default
 	}];
 	
 	var App = function App() {
@@ -23876,7 +23882,7 @@
 	}
 	
 	var Nav = function Nav() {
-	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, _react2.default.createElement('div', { className: 'dropdown' }, _react2.default.createElement('button', { className: 'dropbtn' }, _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' })), _react2.default.createElement('div', { className: 'dropdown-content' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'menu-link' }, 'HOME'), _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'menu-link' }, 'CHAT'), _react2.default.createElement(_reactRouterDom.Link, { to: '/about', className: 'link', id: 'menu-link' }, 'ABOUT'), _react2.default.createElement(_reactRouterDom.Link, { to: '/contact', className: 'link', id: 'menu-link' }, 'CONTACT')))));
+	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, _react2.default.createElement('div', { className: 'dropdown' }, _react2.default.createElement('button', { className: 'dropbtn' }, _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' })), _react2.default.createElement('div', { className: 'dropdown-content' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'menu-link' }, 'HOME'), _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'menu-link' }, 'CHAT'), _react2.default.createElement(_reactRouterDom.Link, { to: '/about', className: 'link', id: 'menu-link' }, 'ABOUT'), _react2.default.createElement(_reactRouterDom.Link, { to: '/faqs', className: 'link', id: 'menu-link' }, 'FAQS'), _react2.default.createElement(_reactRouterDom.Link, { to: '/contact', className: 'link', id: 'menu-link' }, 'CONTACT')))));
 	};
 	
 	exports.default = Nav;
@@ -45118,6 +45124,32 @@
 	
 	var About = function About() {
 	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container-left' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "340px", height: "340px" } })), _react2.default.createElement('div', { className: 'about-container-left' }, _react2.default.createElement('div', { className: 'bio-left' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'I\'m a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I\'m also fluent in Spanish and French.'))), _react2.default.createElement('div', { className: 'spacing' }), _react2.default.createElement('div', { className: 'image-container-right' }, _react2.default.createElement('img', { src: './images/penguin-square.jpg', style: { width: "280px", height: "280px" } })), _react2.default.createElement('div', { className: 'about-container-right' }, _react2.default.createElement('div', { className: 'bio-right' }, _react2.default.createElement('p', { id: 'name' }, 'Paco'), _react2.default.createElement('p', null, 'Hola amigos! I\'m a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin\' on the Patagonian coast. ')))), _react2.default.createElement('div', { className: 'about-col-right' }));
+	};
+	
+	exports.default = About;
+
+/***/ }),
+/* 484 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouterDom = __webpack_require__(168);
+	
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var About = function About() {
+	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, 'faqs'), _react2.default.createElement('div', { className: 'about-col-right' }));
 	};
 	
 	exports.default = About;

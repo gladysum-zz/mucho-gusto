@@ -5,6 +5,7 @@ import Home from './Home'
 import Chat from './Chat'
 import Contact from './Contact'
 import About from './About'
+import FAQS from './FAQS'
 
 const routes = [
   { path: '/',
@@ -19,6 +20,9 @@ const routes = [
   },
   { path: '/about',
     main: About
+  },
+  { path: '/faqs',
+    main: FAQS
   }
 ]
 
