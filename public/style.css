@@ -295,6 +295,7 @@
 
 .contact-text {
   font-size: 24px;
+  line-height: 1.8em;
   text-align: center;
   padding-top: 7%;
   color: #666;
@@ -306,6 +307,7 @@
 
 .contact-col {
   display:inline-block;
+  text-align: center;
   width: 33%;
   color: #666;
 }
