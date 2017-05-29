@@ -7,9 +7,11 @@ const Footer = ()=>(
       <div className="footer-col-edge"></div>
       <div className="footer-col-1">
         <div className="small-title"> Mucho Gusto</div>
-        <Link to={'/faqs'}>FAQS</Link><br/>
-        <Link to={'/team'}>TEAM</Link><br/>
-        <Link to={'/contact'}>CONTACT</Link><br/>
+        <p className="footer-link-internal">
+          <Link to={'/faqs'}>FAQS</Link><br/>
+          <Link to={'/team'}>TEAM</Link><br/>
+          <Link to={'/contact'}>CONTACT</Link>
+        </p>
         <div className="copyright">
           © 2017 Gladys Um
         </div>

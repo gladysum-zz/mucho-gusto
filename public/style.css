@@ -537,6 +537,9 @@ a:active {
   line-height: 1.8em;
 }
 
+.footer-link-internal {
+  color: #666;
+}
 .copyright {
   padding-top: 19px;
   font-size: 12px;

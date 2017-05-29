@@ -1,7 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-const Home = () => (
+export default class Home extends React.Component {
+  constructor() {
+    super();
+  }
+
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render() {
+    return (
   <div className="home">
     <div className="home-col-left"></div>
     <div className="home-col-middle">
@@ -21,6 +31,7 @@ const Home = () => (
     </div>
     <div className="home-col-right"></div>
   </div>
-)
+    )
+  }
+}
 
-export default Home;

@@ -1,7 +1,17 @@
 import React from 'react';
 import ChatContainer from './ChatContainer';
 
-const Chat = () => (
+export default class Chat extends React.Component {
+  constructor() {
+    super();
+  }
+
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
+
+  render() {
+    return (
   <div className="background">
     <div className="chat-col-left">
     </div>
@@ -11,6 +21,7 @@ const Chat = () => (
     <div className="chat-col-right">
     </div>
   </div>
-)
+    )
+  }
+}
 
-export default Chat;
