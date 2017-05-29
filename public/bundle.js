@@ -45149,7 +45149,7 @@
 	}
 	
 	var About = function About() {
-	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, 'faqs'), _react2.default.createElement('div', { className: 'about-col-right' }));
+	  return _react2.default.createElement('div', { className: 'faqs-background' }, _react2.default.createElement('div', { className: 'faqs-title' }, 'Frequently Asked Questions'), _react2.default.createElement('div', { className: 'faqs-col-left' }), _react2.default.createElement('div', { className: 'faqs-col-middle' }, _react2.default.createElement('div', { className: 'faqs-container' }, _react2.default.createElement('div', { className: 'question' }, 'What is Mucho Gusto?'), _react2.default.createElement('div', { className: 'answer' }, 'Mucho Gusto is a language-learning app that uses artifical intelligence. It\'s powered by IBM Watson Conversation Service, which provides natural language processing capabilities.'), _react2.default.createElement('div', { className: 'question' }, 'What is Paco?'), _react2.default.createElement('div', { className: 'answer' }, 'I\'m a penguin. I\'m also a Spanish-language chatbot. I\'m here to help you practice your Spanish conversation skills.'))), _react2.default.createElement('div', { className: 'faqs-col-right' }));
 	};
 	
 	exports.default = About;

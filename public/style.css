@@ -439,3 +439,57 @@ a:active {
 .spacing {
   height: 200px;
 }
+
+/* ----- FAQS PAGE----- */
+.faqs-background {
+  height: 1200px;
+  background-color: yellow;
+  margin: 0 -1% -1% -1%;
+}
+
+.faqs-title {
+  text-align: center;
+  font-size: 40px;
+  color: #f46b22;
+  font-weight: bold;
+  padding: 30px;
+}
+
+.faqs-col-left {
+  display:inline-block;
+  width: 25%;
+}
+
+.faqs-col-middle {
+  display:inline-block;
+  width: 50%;
+}
+
+.faqs-col-right {
+  display:inline-block;
+  width: 25%;
+}
+
+.faqs-container {
+  background-color: white;
+  border-radius: 14px;
+  padding: 30px;
+  color: #666;
+}
+
+.question {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.33em;
+  padding-bottom: 6px;
+}
+
+.answer {
+  font-size: 18px;
+  line-height: 1.6em;
+  font-weight: 400;
+  padding-bottom: 12px;
+}
+
+
+
