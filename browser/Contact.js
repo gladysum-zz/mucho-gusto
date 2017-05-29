@@ -32,20 +32,15 @@ export default class Contact extends React.Component {
           gladysum (at) gmail (dot) com
         </div>
         <div className="contact-col">
-          <div className="social">
-            <a href="https://www.linkedin.com/in/gladysum/" target="_blank">
-              LinkedIn
-            </a>
-          </div>
+          <a href="https://www.linkedin.com/in/gladysum/" target="_blank" className="social">
+            LinkedIn
+          </a><br/>
           linkedin.com/in/gladysum/
         </div>
-
         <div className="contact-col">
-          <div className="social">
-            <a href="https://github.com/gladysum" target="_blank">
-              GitHub
-            </a>
-          </div>
+          <a href="https://github.com/gladysum" target="_blank" className="social">
+            GitHub
+          </a><br/>
           github.com/gladysum
         </div>
       </div>

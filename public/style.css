@@ -154,7 +154,7 @@
   border-radius: 8px;
 }
 
-.chat-button:hover {
+#chat-button:hover {
   background-color: #dc5406;
 }
 
@@ -305,6 +305,10 @@
   font-weight: bold;
   font-size: 24px;
   color: #f46b22;
+}
+
+a.social:hover {
+  color: #dc5406;
 }
 
 a:link {
