@@ -20,12 +20,9 @@ export default class Home extends React.Component {
       </div>
       <div className="home-main-text">
         Hola amigos! I'm Paco, a Spanish-language chatbot. I was developed by Gladys Um and am powered by IBM Watson Conversation Service. Want to practice your Español?
-      </div>
-      <div className="chat-button-container">
-        <Link to={'/chat'} className="link" id="chat-button-link">
-          <div className="chat-button">
-            Vamos
-          </div>
+        <div className="spacing-60px"></div>
+        <Link to={'/chat'} className="link" id="chat-button">
+             Vamos
         </Link>
       </div>
     </div>
