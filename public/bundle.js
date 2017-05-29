@@ -23815,9 +23815,9 @@
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _About = __webpack_require__(440);
+	var _Team = __webpack_require__(486);
 	
-	var _About2 = _interopRequireDefault(_About);
+	var _Team2 = _interopRequireDefault(_Team);
 	
 	var _FAQS = __webpack_require__(441);
 	
@@ -23834,8 +23834,8 @@
 	  main: _Chat2.default
 	}, { path: '/contact',
 	  main: _Contact2.default
-	}, { path: '/about',
-	  main: _About2.default
+	}, { path: '/team',
+	  main: _Team2.default
 	}, { path: '/faqs',
 	  main: _FAQS2.default
 	}];
@@ -23886,7 +23886,7 @@
 	}
 	
 	var Nav = function Nav() {
-	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, _react2.default.createElement('div', { className: 'dropdown' }, _react2.default.createElement('button', { className: 'dropbtn' }, _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' })), _react2.default.createElement('div', { className: 'dropdown-content' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'menu-link' }, 'HOME'), _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'menu-link' }, 'CHAT'), _react2.default.createElement(_reactRouterDom.Link, { to: '/about', className: 'link', id: 'menu-link' }, 'ABOUT'), _react2.default.createElement(_reactRouterDom.Link, { to: '/faqs', className: 'link', id: 'menu-link' }, 'FAQS'), _react2.default.createElement(_reactRouterDom.Link, { to: '/contact', className: 'link', id: 'menu-link' }, 'CONTACT')))));
+	  return _react2.default.createElement('div', { className: 'nav' }, _react2.default.createElement('div', { className: 'nav-col-left' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'home-link' }, 'MUCHO GUSTO')), _react2.default.createElement('div', { className: 'nav-col-right' }, _react2.default.createElement('div', { className: 'dropdown' }, _react2.default.createElement('button', { className: 'dropbtn' }, _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' }), _react2.default.createElement('div', { className: 'nav-icon' })), _react2.default.createElement('div', { className: 'dropdown-content' }, _react2.default.createElement(_reactRouterDom.Link, { to: '/', className: 'link', id: 'menu-link' }, 'HOME'), _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'menu-link' }, 'CHAT'), _react2.default.createElement(_reactRouterDom.Link, { to: '/faqs', className: 'link', id: 'menu-link' }, 'FAQS'), _react2.default.createElement(_reactRouterDom.Link, { to: '/team', className: 'link', id: 'menu-link' }, 'TEAM'), _react2.default.createElement(_reactRouterDom.Link, { to: '/contact', className: 'link', id: 'menu-link' }, 'CONTACT')))));
 	};
 	
 	exports.default = Nav;
@@ -34659,7 +34659,7 @@
 	}
 	
 	var Footer = function Footer() {
-	  return _react2.default.createElement('div', { className: 'footer' }, _react2.default.createElement('div', { className: 'footer-content' }, _react2.default.createElement('div', { className: 'footer-col' }), _react2.default.createElement('div', { className: 'footer-col' }, 'Mucho Gusto', _react2.default.createElement('br', null), 'About', _react2.default.createElement('br', null), 'FAQS', _react2.default.createElement('br', null), 'Contact', _react2.default.createElement('div', { className: 'copyright' }, '\xA9 2017 Gladys Um')), _react2.default.createElement('div', { className: 'footer-col' }, 'Connect', _react2.default.createElement('br', null), 'LinkedIn', _react2.default.createElement('br', null), 'GitHub'), _react2.default.createElement('div', { className: 'footer-col' }, _react2.default.createElement('img', { src: './images/penguin-computer.jpg', style: { width: "190px", height: "120px" } })), _react2.default.createElement('div', { className: 'footer-col' })));
+	  return _react2.default.createElement('div', { className: 'footer' }, _react2.default.createElement('div', { className: 'footer-content' }, _react2.default.createElement('div', { className: 'footer-col' }), _react2.default.createElement('div', { className: 'footer-col' }, 'Mucho Gusto', _react2.default.createElement('br', null), 'Team', _react2.default.createElement('br', null), 'FAQS', _react2.default.createElement('br', null), 'Contact', _react2.default.createElement('div', { className: 'copyright' }, '\xA9 2017 Gladys Um')), _react2.default.createElement('div', { className: 'footer-col' }, 'Connect', _react2.default.createElement('br', null), 'LinkedIn', _react2.default.createElement('br', null), 'GitHub'), _react2.default.createElement('div', { className: 'footer-col' }, _react2.default.createElement('img', { src: './images/penguin-computer.jpg', style: { width: "190px", height: "120px" } })), _react2.default.createElement('div', { className: 'footer-col' })));
 	};
 	
 	exports.default = Footer;
@@ -39858,32 +39858,7 @@
 	exports.default = Contact;
 
 /***/ }),
-/* 440 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouterDom = __webpack_require__(168);
-	
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	var About = function About() {
-	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container-left' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "340px", height: "340px" } })), _react2.default.createElement('div', { className: 'about-container-left' }, _react2.default.createElement('div', { className: 'bio-left' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'I\'m a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I\'m also fluent in Spanish and French.'))), _react2.default.createElement('div', { className: 'spacing' }), _react2.default.createElement('div', { className: 'image-container-right' }, _react2.default.createElement('img', { src: './images/penguin-square.jpg', style: { width: "280px", height: "280px" } })), _react2.default.createElement('div', { className: 'about-container-right' }, _react2.default.createElement('div', { className: 'bio-right' }, _react2.default.createElement('p', { id: 'name' }, 'Paco'), _react2.default.createElement('p', null, 'Hola amigos! I\'m a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin\' on the Patagonian coast. ')))), _react2.default.createElement('div', { className: 'about-col-right' }));
-	};
-	
-	exports.default = About;
-
-/***/ }),
+/* 440 */,
 /* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -45183,6 +45158,32 @@
 	};
 	
 	exports.default = new Typography();
+
+/***/ }),
+/* 486 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactRouterDom = __webpack_require__(168);
+	
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	var Team = function Team() {
+	  return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container-left' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "340px", height: "340px" } })), _react2.default.createElement('div', { className: 'about-container-left' }, _react2.default.createElement('div', { className: 'bio-left' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'I\'m a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I\'m also fluent in Spanish and French.'))), _react2.default.createElement('div', { className: 'spacing' }), _react2.default.createElement('div', { className: 'image-container-right' }, _react2.default.createElement('img', { src: './images/penguin-square.jpg', style: { width: "280px", height: "280px" } })), _react2.default.createElement('div', { className: 'about-container-right' }, _react2.default.createElement('div', { className: 'bio-right' }, _react2.default.createElement('p', { id: 'name' }, 'Paco'), _react2.default.createElement('p', null, 'Hola amigos! I\'m a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin\' on the Patagonian coast. ')))), _react2.default.createElement('div', { className: 'about-col-right' }));
+	};
+	
+	exports.default = Team;
 
 /***/ })
 /******/ ]);

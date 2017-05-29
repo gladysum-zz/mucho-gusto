@@ -7,7 +7,7 @@ const Footer = ()=>(
       <div className="footer-col"></div>
       <div className="footer-col">
         Mucho Gusto<br/>
-        About<br/>
+        Team<br/>
         FAQS<br/>
         Contact
         <div className="copyright">

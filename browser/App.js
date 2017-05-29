@@ -5,7 +5,7 @@ import Footer from './Footer'
 import Home from './Home'
 import Chat from './Chat'
 import Contact from './Contact'
-import About from './About'
+import Team from './Team'
 import FAQS from './FAQS'
 
 const routes = [
@@ -19,8 +19,8 @@ const routes = [
   { path: '/contact',
     main: Contact
   },
-  { path: '/about',
-    main: About
+  { path: '/team',
+    main: Team
   },
   { path: '/faqs',
     main: FAQS

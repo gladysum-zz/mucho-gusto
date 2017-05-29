@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-const About = () => (
+const Team = () => (
   <div className="about-background">
     <div className="about-col-left"></div>
     <div className="about-col-middle">
@@ -38,4 +38,4 @@ const About = () => (
   </div>
 )
 
-export default About;
+export default Team;
