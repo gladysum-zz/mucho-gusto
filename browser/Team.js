@@ -26,7 +26,7 @@ export default class Team extends React.Component {
       <div className="about-container-left">
         <div className="bio-left">
           <p id="name">Gladys Um</p>
-          <p>I'm a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I'm also fluent in Spanish and French.
+          <p>I'm a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard and am fluent in Spanish and French.
             </p>
         </div>
       </div>

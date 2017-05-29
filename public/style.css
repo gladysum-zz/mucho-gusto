@@ -1,8 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
 .app {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* ----- NAVBAR ----- */
@@ -24,7 +25,8 @@
 }
 
 #home-link {
-  font-size: 35px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 37px;
   font-weight: bold;
   color: #f46b22;
 }
@@ -327,7 +329,7 @@ a:active {
     text-decoration: none;
 }
 
-/* ----- ABOUT PAGE----- */
+/* ----- TEAM PAGE----- */
 .about-background {
   height: 1000px;
   background-color: yellow;
@@ -484,14 +486,15 @@ a:active {
 
 /* ----- FOOTER ----- */
 .footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   color: #9b9b9b;
 }
 
-.footer-content {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.footer-col-edge {
+  vertical-align: top;
+  display:inline-block;
+  width: 23%;
 }
 
 .footer-col-1 {
@@ -512,22 +515,18 @@ a:active {
   width: 18%;
 }
 
-.footer-col-edge {
-  vertical-align: top;
-  display:inline-block;
-  width: 23%;
-}
-
 .small-title {
   color: #f46b22;
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 1.8em;
+  line-height: 2.4em;
 }
 
 #footer-link {
   color: #9b9b9b;
+  font-size: 14px;
+  line-height: 2em;
 }
 
 #footer-link:hover {

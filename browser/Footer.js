@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 
 const Footer = ()=>(
   <div className="footer">
-    <div className="footer-content">
       <div className="footer-col-edge"></div>
       <div className="footer-col-1">
         <div className="small-title"> Mucho Gusto</div>
@@ -31,7 +30,6 @@ const Footer = ()=>(
       </div>
 
       <div className="footer-col-edge"></div>
-    </div>
   </div>
 )
 
