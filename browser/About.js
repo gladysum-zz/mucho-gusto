@@ -16,7 +16,7 @@ const About = () => (
       <div className="about-container-left">
         <div className="bio-left">
           <p id="name">Gladys Um</p>
-          <p>I'm a fullstack software engineer working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard and an MA in Romance Languages from Princeton.
+          <p>I'm a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard. I'm also fluent in Spanish and French.
             </p>
         </div>
       </div>
@@ -30,8 +30,7 @@ const About = () => (
       <div className="about-container-right">
         <div className="bio-right">
           <p id="name">Paco</p>
-          <p>Fullstack software developer proficient in JavaScript, Node.js, React, React-Redux, Express.js, Sequelize, PostgreSQL, Mocha, Chai, Jasmine, HTML, and CSS.
-            Interests: Artificial intelligence, natural language processing, chatbots, IBM Watson Services</p>
+          <p>Hola amigos! I'm a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin' on the Patagonian coast. </p>
         </div>
       </div>
     </div>

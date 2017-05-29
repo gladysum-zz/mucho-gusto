@@ -373,18 +373,17 @@ a:active {
   -webkit-transform: rotate(-5deg); /* Safari */
   transform: rotate(-5deg);
   margin-left: -20px;
-  margin-bottom: -15px;
+  margin-bottom: -25px;
 }
 
 .about-container-left {
   width: 720px;
-
   display:inline-block;
   background-color: white;
   border-radius: 14px;
   position: absolute;
   z-index: 1;
-  margin-top: -300px;
+  margin-top: -320px;
 }
 
 .bio-left {
@@ -411,7 +410,6 @@ a:active {
 
 .about-container-right {
   width: 720px;
-  height: 330px;
   display:inline-block;
   background-color: white;
   border-radius: 14px;
@@ -439,5 +437,5 @@ a:active {
 }
 
 .spacing {
-  height: 150px;
+  height: 200px;
 }
