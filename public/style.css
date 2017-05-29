@@ -81,7 +81,6 @@
     color: white;
     font-size: 24px;
     min-width: 150px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 18px 0 18px 18px;
     margin-top: -30px;
@@ -320,22 +319,18 @@
 
 a:link {
     text-decoration: none;
-    color: #f46b22;
 }
 
 a:visited {
     text-decoration: none;
-    color: #f46b22;
 }
 
 a:hover {
     text-decoration: none;
-    color: #dc5406;
 }
 
 a:active {
     text-decoration: none;
-    color: #f46b22;
 }
 
 /* ----- ABOUT PAGE----- */
@@ -537,7 +532,7 @@ a:active {
   line-height: 1.8em;
 }
 
-.footer-link-internal {
+#footer-link-internal {
   color: #666;
 }
 .copyright {
