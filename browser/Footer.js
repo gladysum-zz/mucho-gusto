@@ -7,11 +7,9 @@ const Footer = ()=>(
       <div className="footer-col-edge"></div>
       <div className="footer-col-1">
         <div className="small-title"> Mucho Gusto</div>
-        <p id="footer-link-internal">
-          <Link to={'/faqs'}>FAQS</Link><br/>
-          <Link to={'/team'}>Team</Link><br/>
-          <Link to={'/contact'}>Contact</Link>
-        </p>
+          <Link to={'/faqs'} id="footer-link">FAQS</Link><br/>
+          <Link to={'/team'}id="footer-link">Team</Link><br/>
+          <Link to={'/contact'}id="footer-link">Contact</Link>
         <div className="copyright">
           © 2017 Gladys Um
         </div>
@@ -20,8 +18,12 @@ const Footer = ()=>(
 
       <div className="footer-col-2">
         <div className="small-title">Connect</div>
-        LinkedIn<br/>
-        GitHub
+        <a href="https://www.linkedin.com/in/gladysum/" target="_blank" id="footer-link">
+          LinkedIn
+        </a><br/>
+        <a href="https://github.com/gladysum" target="_blank" id="footer-link">
+          GitHub
+        </a>
       </div>
 
       <div className="footer-col-3">
