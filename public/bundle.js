@@ -45363,7 +45363,7 @@
 /* 486 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 	
@@ -45384,8 +45384,6 @@
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouterDom = __webpack_require__(168);
 	
 	function _interopRequireDefault(obj) {
 	  return obj && obj.__esModule ? obj : { default: obj };
@@ -45419,14 +45417,14 @@
 	  }
 	
 	  _createClass(Team, [{
-	    key: 'componentWillMount',
+	    key: "componentWillMount",
 	    value: function componentWillMount() {
 	      window.scrollTo(0, 0);
 	    }
 	  }, {
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
-	      return _react2.default.createElement('div', { className: 'about-background' }, _react2.default.createElement('div', { className: 'about-col-left' }), _react2.default.createElement('div', { className: 'about-col-middle' }, _react2.default.createElement('div', { className: 'about-title' }, 'Meet the Team'), _react2.default.createElement('div', { className: 'image-container-left' }, _react2.default.createElement('img', { src: './images/gladys.jpg', style: { width: "340px", height: "340px" } })), _react2.default.createElement('div', { className: 'about-container-left' }, _react2.default.createElement('div', { className: 'bio-left' }, _react2.default.createElement('p', { id: 'name' }, 'Gladys Um'), _react2.default.createElement('p', null, 'I\'m a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard and am fluent in Spanish and French.'))), _react2.default.createElement('div', { className: 'spacing' }), _react2.default.createElement('div', { className: 'image-container-right' }, _react2.default.createElement('img', { src: './images/penguin-square.jpg', style: { width: "280px", height: "280px" } })), _react2.default.createElement('div', { className: 'about-container-right' }, _react2.default.createElement('div', { className: 'bio-right' }, _react2.default.createElement('p', { id: 'name' }, 'Paco'), _react2.default.createElement('p', null, 'Hola amigos! I\'m a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin\' on the Patagonian coast. ')))), _react2.default.createElement('div', { className: 'about-col-right' }));
+	      return _react2.default.createElement("div", { className: "team-background" }, _react2.default.createElement("div", { className: "team-col-left" }), _react2.default.createElement("div", { className: "team-col-middle" }, _react2.default.createElement("div", { className: "team-title" }, "Meet the Team"), _react2.default.createElement("div", { className: "bio" }, _react2.default.createElement("img", { src: "./images/gladys.jpg", id: "bio-pic" }), _react2.default.createElement("a", { href: "https://www.linkedin.com/in/gladysum/", target: "_blank", id: "bio-name" }, "Gladys Um"), _react2.default.createElement("div", { id: "bio-text" }, " I'm a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard and am fluent in Spanish and French.")), _react2.default.createElement("div", { className: "bio" }, _react2.default.createElement("img", { src: "./images/penguin-square.jpg", id: "bio-pic" }), _react2.default.createElement("div", { id: "bio-name" }, "Paco"), _react2.default.createElement("div", { id: "bio-text" }, "Hola amigos! I'm a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin' on the Patagonian coast."))), _react2.default.createElement("div", { className: "team-col-right" }));
 	    }
 	  }]);
 	
