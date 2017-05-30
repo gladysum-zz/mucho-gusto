@@ -13,11 +13,11 @@ export default class FAQS extends React.Component {
   render() {
     return (
   <div className="faqs-background">
-    <div className="faqs-title">
-    Frequently Asked Questions
-    </div>
     <div className="faqs-col-left"></div>
     <div className="faqs-col-middle">
+      <div className="faqs-title">
+      Frequently Asked Questions
+      </div>
       <div className="faqs-container">
 
           <div className="question">
