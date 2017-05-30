@@ -163,7 +163,6 @@
 
 /* ----- CHAT PAGE----- */
 .background {
-  height: 700px;
   background-color: yellow;
   margin: -2% -1% -1% -1%;
   padding-bottom: 100px;
@@ -186,6 +185,7 @@
 
 .chat-title {
   margin-top: 100px;
+  margin-bottom: 50px;
   text-align: center;
   font-size: 40px;
   color: #f46b22;
@@ -212,7 +212,6 @@
   height: 100%;
   overflow-y: auto;
   margin-top: 10%;
-
   padding-top: 5%;
   list-style-type: none;
   padding-left: 15px;
