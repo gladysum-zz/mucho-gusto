@@ -23815,7 +23815,7 @@
 	
 	var _Contact2 = _interopRequireDefault(_Contact);
 	
-	var _Team = __webpack_require__(486);
+	var _Team = __webpack_require__(440);
 	
 	var _Team2 = _interopRequireDefault(_Team);
 	
@@ -34809,7 +34809,7 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', { className: 'background' }, _react2.default.createElement('div', { className: 'chat-col-left' }), _react2.default.createElement('div', { className: 'chat-col-middle' }, _react2.default.createElement(_ChatContainer2.default, null)), _react2.default.createElement('div', { className: 'chat-col-right' }));
+	      return _react2.default.createElement('div', { className: 'background' }, _react2.default.createElement('div', { className: 'chat-col-left' }), _react2.default.createElement('div', { className: 'chat-col-middle' }, _react2.default.createElement('div', { className: 'chat-title' }, 'Chat with Paco in Spanish'), _react2.default.createElement(_ChatContainer2.default, null)), _react2.default.createElement('div', { className: 'chat-col-right' }));
 	    }
 	  }]);
 	
@@ -40008,7 +40008,80 @@
 	exports.default = Contact;
 
 /***/ }),
-/* 440 */,
+/* 440 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+	
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+	
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+	
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+	
+	var Team = function (_React$Component) {
+	  _inherits(Team, _React$Component);
+	
+	  function Team() {
+	    _classCallCheck(this, Team);
+	
+	    return _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).call(this));
+	  }
+	
+	  _createClass(Team, [{
+	    key: "componentWillMount",
+	    value: function componentWillMount() {
+	      window.scrollTo(0, 0);
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement("div", { className: "team-background" }, _react2.default.createElement("div", { className: "team-col-left" }), _react2.default.createElement("div", { className: "team-col-middle" }, _react2.default.createElement("div", { className: "team-title" }, "Meet the Team"), _react2.default.createElement("div", { className: "bio" }, _react2.default.createElement("img", { src: "./images/gladys.jpg", id: "bio-pic" }), _react2.default.createElement("a", { href: "https://www.linkedin.com/in/gladysum/", target: "_blank", id: "bio-name" }, "Gladys Um"), _react2.default.createElement("div", { id: "bio-text" }, " I'm a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard and am fluent in Spanish and French.")), _react2.default.createElement("div", { className: "bio" }, _react2.default.createElement("img", { src: "./images/penguin-square.jpg", id: "bio-pic" }), _react2.default.createElement("div", { id: "bio-name" }, "Paco"), _react2.default.createElement("div", { id: "bio-text" }, "Hola amigos! I'm a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin' on the Patagonian coast."))), _react2.default.createElement("div", { className: "team-col-right" }));
+	    }
+	  }]);
+	
+	  return Team;
+	}(_react2.default.Component);
+	
+	exports.default = Team;
+
+/***/ }),
 /* 441 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -45358,80 +45431,6 @@
 	};
 	
 	exports.default = new Typography();
-
-/***/ }),
-/* 486 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _createClass = function () {
-	  function defineProperties(target, props) {
-	    for (var i = 0; i < props.length; i++) {
-	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
-	    }
-	  }return function (Constructor, protoProps, staticProps) {
-	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
-	  };
-	}();
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) {
-	  return obj && obj.__esModule ? obj : { default: obj };
-	}
-	
-	function _classCallCheck(instance, Constructor) {
-	  if (!(instance instanceof Constructor)) {
-	    throw new TypeError("Cannot call a class as a function");
-	  }
-	}
-	
-	function _possibleConstructorReturn(self, call) {
-	  if (!self) {
-	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
-	}
-	
-	function _inherits(subClass, superClass) {
-	  if (typeof superClass !== "function" && superClass !== null) {
-	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
-	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
-	}
-	
-	var Team = function (_React$Component) {
-	  _inherits(Team, _React$Component);
-	
-	  function Team() {
-	    _classCallCheck(this, Team);
-	
-	    return _possibleConstructorReturn(this, (Team.__proto__ || Object.getPrototypeOf(Team)).call(this));
-	  }
-	
-	  _createClass(Team, [{
-	    key: "componentWillMount",
-	    value: function componentWillMount() {
-	      window.scrollTo(0, 0);
-	    }
-	  }, {
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement("div", { className: "team-background" }, _react2.default.createElement("div", { className: "team-col-left" }), _react2.default.createElement("div", { className: "team-col-middle" }, _react2.default.createElement("div", { className: "team-title" }, "Meet the Team"), _react2.default.createElement("div", { className: "bio" }, _react2.default.createElement("img", { src: "./images/gladys.jpg", id: "bio-pic" }), _react2.default.createElement("a", { href: "https://www.linkedin.com/in/gladysum/", target: "_blank", id: "bio-name" }, "Gladys Um"), _react2.default.createElement("div", { id: "bio-text" }, " I'm a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard and am fluent in Spanish and French.")), _react2.default.createElement("div", { className: "bio" }, _react2.default.createElement("img", { src: "./images/penguin-square.jpg", id: "bio-pic" }), _react2.default.createElement("div", { id: "bio-name" }, "Paco"), _react2.default.createElement("div", { id: "bio-text" }, "Hola amigos! I'm a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin' on the Patagonian coast."))), _react2.default.createElement("div", { className: "team-col-right" }));
-	    }
-	  }]);
-	
-	  return Team;
-	}(_react2.default.Component);
-	
-	exports.default = Team;
 
 /***/ })
 /******/ ]);

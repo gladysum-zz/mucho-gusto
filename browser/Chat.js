@@ -16,6 +16,9 @@ export default class Chat extends React.Component {
     <div className="chat-col-left">
     </div>
     <div className="chat-col-middle">
+      <div className="chat-title">
+      Chat with Paco in Spanish
+      </div>
       <ChatContainer />
     </div>
     <div className="chat-col-right">
