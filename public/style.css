@@ -10,8 +10,8 @@
 /* ----- NAVBAR ----- */
 .nav {
   height: 100px;
-  background-color: yellow;
-  margin: -1% -1% 0 -1%;
+  position: fixed;
+  width: 100%;
 }
 
 .nav-col-left {
@@ -109,7 +109,7 @@
 .home {
   padding-bottom: 200px;
   background-color: yellow;
-  margin: 0 -1% -1% -1%;
+  margin: -2% -1% -1% -1%;
 }
 
 .home-col-left {
@@ -128,7 +128,7 @@
 }
 
 .home-face-icon {
-  margin-top: -14%;
+  margin-top: 50px;
   height: 200px;
   text-align: center;
 }
