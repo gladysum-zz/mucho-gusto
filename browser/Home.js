@@ -26,7 +26,8 @@ export default class Home extends React.Component {
         </Link>
       </div>
     </div>
-    <div className="home-col-right"></div>
+    <div className="home-col-right">
+    </div>
   </div>
     )
   }

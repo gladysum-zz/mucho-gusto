@@ -108,8 +108,10 @@
 /* ----- HOME PAGE ----- */
 .home {
   padding-bottom: 200px;
-  background-color: yellow;
   margin: -2% -1% -1% -1%;
+  background-image: url('/images/beach.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home-col-left {
@@ -163,32 +165,38 @@
 
 /* ----- CHAT PAGE----- */
 .background {
-  background-color: yellow;
+  padding-top: 100px;
   margin: -2% -1% -1% -1%;
   padding-bottom: 100px;
+  background-image: url('/images/beach-palms.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .chat-col-left {
+  vertical-align: top;
   display:inline-block;
-  width: 28%;
+  width: 40%;
 }
 
 .chat-col-middle {
+  padding-top: 10px;
+  vertical-align: top;
   display:inline-block;
   width: 44%;
 }
 
 .chat-col-right {
+  vertical-align: top;
   display:inline-block;
-  width: 28%;
+  width: 10%;
 }
 
 .chat-title {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  padding: 0 0 10px 0;
   text-align: center;
   font-size: 40px;
-  color: #f46b22;
+  color: purple;
   font-weight: bold;
 }
 
@@ -266,7 +274,7 @@
 /* ----- CONTACT PAGE----- */
 .contact-background {
   height: 700px;
-  background-color: yellow;
+  background-color: aqua;
   margin: -2% -1% -1% -1%;
 }
 
@@ -340,9 +348,9 @@ a:active {
 
 /* ----- TEAM PAGE----- */
 .team-background {
-  padding-bottom: 100px;
-  background-color: yellow;
+  padding-bottom: 200px;
   margin: -2% -1% -1% -1%;
+  background-color: #82CAFA;
 }
 
 .team-col-left {
@@ -404,8 +412,10 @@ a:active {
 /* ----- FAQS PAGE----- */
 .faqs-background {
   padding-bottom: 100px;
-  background-color: yellow;
   margin: -2% -1% -1% -1%;
+  background-image: url('/images/beach-chair.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .faqs-title {

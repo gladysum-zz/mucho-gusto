@@ -22,7 +22,7 @@ export default class Contact extends React.Component {
         Contact Gladys
       </div>
       <div className="contact-text">
-        Want to collaborate? Want to learn more about me? <br/> Connect with me via any of the channels below.  I'd love to hear from you!
+        Want to collaborate? Want to learn more about me? <br/> Connect with me via any of the channels below.
       </div>
       <div className="contact-links">
         <div className="contact-col">
