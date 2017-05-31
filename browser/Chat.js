@@ -13,13 +13,13 @@ export default class Chat extends React.Component {
   render() {
     return (
   <div className="background">
-    <div className="chat-title">
-      Chat with Paco in Spanish
-    </div>
     <div className="chat-col-left">
       <img src="./images/penguin-standing.png" style={{height: "600px"}}/>
     </div>
     <div className="chat-col-middle">
+      <div className="chat-title">
+        Chat with Paco in Spanish
+      </div>
       <ChatContainer />
     </div>
     <div className="chat-col-right">

@@ -34809,7 +34809,7 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', { className: 'background' }, _react2.default.createElement('div', { className: 'chat-title' }, 'Chat with Paco in Spanish'), _react2.default.createElement('div', { className: 'chat-col-left' }, _react2.default.createElement('img', { src: './images/penguin-standing.png', style: { height: "600px" } })), _react2.default.createElement('div', { className: 'chat-col-middle' }, _react2.default.createElement(_ChatContainer2.default, null)), _react2.default.createElement('div', { className: 'chat-col-right' }));
+	      return _react2.default.createElement('div', { className: 'background' }, _react2.default.createElement('div', { className: 'chat-col-left' }, _react2.default.createElement('img', { src: './images/penguin-standing.png', style: { height: "600px" } })), _react2.default.createElement('div', { className: 'chat-col-middle' }, _react2.default.createElement('div', { className: 'chat-title' }, 'Chat with Paco in Spanish'), _react2.default.createElement(_ChatContainer2.default, null)), _react2.default.createElement('div', { className: 'chat-col-right' }));
 	    }
 	  }]);
 	
