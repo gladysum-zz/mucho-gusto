@@ -23,7 +23,7 @@ export default class Team extends React.Component {
         <a href="https://www.linkedin.com/in/gladysum/" target="_blank" id="bio-name">
           Gladys Um
         </a>
-        <div id="bio-text"> I'm a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard and am fluent in Spanish and French.
+        <div id="bio-text"> I'm a fullstack software engineer who loves working in JavaScript, Node, Express, React, React-Redux, HTML, and CSS. In addition to building apps that combine beautiful user interfaces with rigorous backend logic, I enjoy solving algorithmic problems on CodeWars and CoderByte. I have a BA in mathematics from Harvard and an MA in Romance Languages from Princeton. I am fluent in Spanish and French.
         </div>
       </div>
 
