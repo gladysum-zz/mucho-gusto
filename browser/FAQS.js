@@ -33,7 +33,7 @@ export default class FAQS extends React.Component {
             I'm a penguin. I'm also a Spanish-language chatbot. I'm here to help you practice your Spanish conversation skills.
           </div>
           <div className="question">
-            How do I start chatting with you?
+            How do I start chatting with Paco?
           </div>
           <div className="answer">
             Go to the menu icon on the top-right corner and select "CHAT".

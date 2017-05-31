@@ -1,7 +1,7 @@
 {
-  "name": "bot-web",
+  "name": "muchogusto",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mucho Gusto is a language-learning app that leverages artificial intelligence and is powered by IBM Watson Conversation Service",
   "main": "index.js",
   "scripts": {
     "test": "",
@@ -25,7 +25,11 @@
     "path": "^0.12.7",
     "react": "^15.5.4",
     "react-dom": "^15.3.2",
+    "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
     "watson-developer-cloud": "^2.31.1",
     "webpack": "^1.15.0"
   }

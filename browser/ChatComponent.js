@@ -3,8 +3,8 @@ import Paper from 'material-ui/Paper';
 import Avatar from 'material-ui/Avatar';
 
 export default class Chat extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.handleScroll = this.handleScroll.bind(this);
   }
 
