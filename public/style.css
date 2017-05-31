@@ -196,7 +196,7 @@
   padding: 0 0 10px 0;
   text-align: center;
   font-size: 40px;
-  color: purple;
+  color: #f46b22;
   font-weight: bold;
 }
 
@@ -212,7 +212,7 @@
   height: 340px;
   margin-bottom: 0;
   padding-bottom: 5%;
-  background-color: lightyellow;
+  background-color: white;
   margin-top: -4%;
 }
 
@@ -227,12 +227,12 @@
 }
 
 #statement-by-me {
-  background-color: blue !important;
+  background-color: #3BB9FF !important;
   color: white !important;
 }
 
 #statement-by-watson {
-  background-color: silver !important;
+  background-color: #B8FCFC !important;
   color: black !important;
 }
 
@@ -250,7 +250,7 @@
   height: 60px;
   padding: 3%;
   text-align : left;
-  background-color: lightgreen;
+  background-color: #FBF6D9;
   z-index: 1;
 }
 
@@ -273,7 +273,7 @@
 
 /* ----- CONTACT PAGE----- */
 .contact-background {
-  height: 700px;
+  padding: 120px 0 120px 0;
   background-color: aqua;
   margin: -2% -1% -1% -1%;
 }
@@ -293,8 +293,13 @@
   width: 20%;
 }
 
-.contact-me {
-  margin-top: 150px;
+.contact-info {
+  background-color: white;
+  border-radius: 14px;
+  padding: 20px 0 40px 0;
+}
+
+.contact-title {
   font-size: 54px;
   text-align: center;
   color: #f46b22;
@@ -317,7 +322,6 @@
   display:inline-block;
   text-align: center;
   width: 33%;
-
 }
 
 .social {
