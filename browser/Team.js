@@ -33,7 +33,7 @@ export default class Team extends React.Component {
           Paco
         </div>
         <div id="bio-text">
-          Hola amigos! I'm a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin' on the Patagonian coast.
+          ¡Hola amigos! I'm a Spanish-language chatbot developed by Gladys Um and powered by IBM Watson Conversation Service. I love helping people practice their Spanish conversation skills. In addition to chatting on Mucho Gusto, I enjoy fishing, swimming, and chillin' on the Patagonian coast.
         </div>
       </div>
     </div>
