@@ -8,6 +8,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch(action.type) {
     case ADD:
+      if (state.messages.length > 200) return {state, messages: state.messages.slice(1).concat(action.payload)};
       return {state, messages: state.messages.concat(action.payload)};
     default:
       return state;

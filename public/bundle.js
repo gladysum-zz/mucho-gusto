@@ -47518,6 +47518,7 @@
 	
 	  switch (action.type) {
 	    case ADD:
+	      if (state.messages.length > 200) return { state: state, messages: state.messages.slice(1).concat(action.payload) };
 	      return { state: state, messages: state.messages.concat(action.payload) };
 	    default:
 	      return state;
