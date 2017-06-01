@@ -42265,7 +42265,7 @@
 	  }, {
 	    key: 'render',
 	    value: function render() {
-	      return _react2.default.createElement('div', { className: 'home' }, _react2.default.createElement('div', { className: 'home-col-left' }), _react2.default.createElement('div', { className: 'home-col-middle' }, _react2.default.createElement('div', { className: 'home-face-icon' }, _react2.default.createElement('img', { src: './images/penguin-face-150.png', style: { width: "130px", height: "130px" } })), _react2.default.createElement('div', { className: 'home-main-text' }, 'Hola amigos! I\'m Paco, a Spanish-language chatbot. I was developed by Gladys Um and am powered by IBM Watson Conversation Service. Want to practice your Espa\xF1ol?', _react2.default.createElement('div', { className: 'spacing-60px' }), _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'chat-button' }, 'Vamos'))), _react2.default.createElement('div', { className: 'home-col-right' }));
+	      return _react2.default.createElement('div', { className: 'home' }, _react2.default.createElement('div', { className: 'home-col-left' }), _react2.default.createElement('div', { className: 'home-col-middle' }, _react2.default.createElement('div', { className: 'home-face-icon' }, _react2.default.createElement('img', { src: './images/penguin-face-150.png', style: { width: "130px", height: "130px" } })), _react2.default.createElement('div', { className: 'home-main-text' }, 'Hola amigos! I\'m Paco, a Spanish-language chatbot. I was developed by Gladys Um and am powered by IBM Watson Conversation Service. Want to practice your espa\xF1ol?', _react2.default.createElement('div', { className: 'spacing-60px' }), _react2.default.createElement(_reactRouterDom.Link, { to: '/chat', className: 'link', id: 'chat-button' }, 'Vamos'))), _react2.default.createElement('div', { className: 'home-col-right' }));
 	    }
 	  }]);
 	
@@ -47506,8 +47506,10 @@
 	  return obj && obj.__esModule ? obj : { default: obj };
 	}
 	
+	var greetings = ['¡Hola! ¿Quieres hablar español conmigo?', '¡Hola! ¿Quieres hablar castellano conmigo?', '¡Hola! ¿Quieres chatear conmigo?', '¡Hola! ¿Quieres chatear en castellano conmigo?', '¡Hola! ¿Quieres chatear en español conmigo?', '¡Hola! ¿Qué tal?', '¡Hola! ¿Quieres practicar el español conmigo?', '¡Hola! ¿Quieres practicar el castellano conmigo?'];
+	
 	var initialState = {
-	  messages: []
+	  messages: [['watson', greetings[Math.floor(Math.random() * 8)]]]
 	};
 	
 	/* ------------ REDUCER ------------------ */
