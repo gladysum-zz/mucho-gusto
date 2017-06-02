@@ -38,7 +38,12 @@ export default class FAQS extends React.Component {
           <div className="answer">
             Go to the menu icon on the top-right corner and select "CHAT".
           </div>
-
+          <div className="question">
+            What kinds of topics does Paco enjoy talking about?
+          </div>
+          <div className="answer">
+            Paco enjoys talking about a wide variety of topics. Try chatting him up the way you'd chat up a cool dude at a meetup or party. For example, you could ask Paco "¿De dónde eres?" or ask him about his interests: "¿Cuál es tu pasatiempo favorito?" or "¿Cuál es tu libro favorito?"
+          </div>
       </div>
     </div>
     <div className="faqs-col-right"></div>
