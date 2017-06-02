@@ -1,0 +1,5 @@
+applications:
+- name: mucho-gusto
+  random-route: true
+  memory: 1.5GB
+  health-check-type: process
