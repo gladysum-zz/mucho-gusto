@@ -25,14 +25,31 @@ app.use(express.static(resolve(__dirname, 'public')));
 // Send index.html for anything else.
 app.get('/*', (_, res) => res.sendFile(resolve(__dirname, 'public', 'index.html')));
 
-app.listen(appEnv.port, function () {
-  console.log('Server listening on', appEnv.url);
-});
+//initialize conversation variables
+var convUserName, convPassWord;
+const convWorkspaceID = 'ff557866-e9ad-4693-bcbd-9a654c85c439'
+
+if (!appEnv) {
+  app.listen(3000, function () {
+    console.log('Server listening on port', 3000);
+  });
+
+  convUserName = process.env.CONVERSATION_USERNAME
+  convPassWord = process.env.CONVERSATION_PASSWORD
+
+}
+else {
+  app.listen(appEnv.port, function () {
+    console.log('Server listening on', appEnv.url);
+  });
+  convUserName = appEnv.VCAP_SERVICES.conversation[0].credentials.username;
+  convPassWord = appEnv.VCAP_SERVICES.conversation[0].credentials.password;
+}
 
 var conversation = new ConversationV1({
-  username: process.env.CONVERSATION_USERNAME,  // add username
-  password: process.env.CONVERSATION_PASSWORD,  // add password
-  path: { workspace_id: process.env.CONVERSATION_WORKSPACE_ID },  // add workspace id
+  username: convUserName,  // add username
+  password: convPassWord,  // add password
+  path: { workspace_id: convWorkspaceID },  // add workspace id
   version_date: '2017-04-21'
 });
 
@@ -50,7 +67,7 @@ app.post('/', (req, res, next)=> {
   return new Promise((resolve, reject)=>{
     var output;
     conversation.message({
-      workspace_id: process.env.CONVERSATION_WORKSPACE_ID,  // add workspace id
+      workspace_id: convWorkspaceID,  // add workspace id
       input: {'text': message},
       context: context
     },
