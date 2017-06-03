@@ -3,8 +3,8 @@ applications:
   memory: 256M
   instances: 1
   domain: mybluemix.net
-  name: mucho-gusto-test
-  host: mucho-gusto-test
+  name: mucho-gusto
+  host: mucho-gusto
   disk_quota: 1024M
   services:
   - bot-time
