@@ -42,13 +42,10 @@ else {
   app.listen(appEnv.port, function () {
     console.log('Server listening on', appEnv.url);
   });
-  console.log('appEnv.app.conversation', appEnv.app.conversation)
+
   //convUserName = appEnv.app.conversation.   VCAP_SERVICES.conversation[0].credentials.username;
   //convPassWord = appEnv.VCAP_SERVICES.conversation[0].credentials.password;
 }
-
-console.log('convUserName', convUserName)
-console.log('convPassWord', convPassWord)
 
 var conversation = new ConversationV1({
   username: convUserName,  // add username
@@ -70,6 +67,10 @@ app.post('/', (req, res, next)=> {
   let message = req.body.input;
   return new Promise((resolve, reject)=>{
     var output;
+
+    console.log('convUserName inside Promise', convUserName)
+    console.log('convPassWord inside Promise', convPassWord)
+
     conversation.message({
       workspace_id: convWorkspaceID,  // add workspace id
       input: {'text': message},
