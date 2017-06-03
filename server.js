@@ -1,5 +1,11 @@
 'use strict';
 
+//provides access to cloud foundry env
+const cfenv = require('cfenv')
+
+//get app env from cloud foundry
+const appEnv = cfenv.getAppEnv()
+
 const express = require('express');
 const app = express();
 const {resolve} = require('path')
@@ -19,8 +25,8 @@ app.use(express.static(resolve(__dirname, 'public')));
 // Send index.html for anything else.
 app.get('/*', (_, res) => res.sendFile(resolve(__dirname, 'public', 'index.html')));
 
-app.listen(3000, function () {
-  console.log('Server listening on port', 3000);
+app.listen(appEnv.port, function () {
+  console.log('Server listening on', appEnv.url);
 });
 
 var conversation = new ConversationV1({
