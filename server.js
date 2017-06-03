@@ -42,6 +42,7 @@ else {
   app.listen(appEnv.port, function () {
     console.log('Server listening on', appEnv.url);
   });
+  console.log('appEnv', appEnv)
   convUserName = appEnv.VCAP_SERVICES.conversation[0].credentials.username;
   convPassWord = appEnv.VCAP_SERVICES.conversation[0].credentials.password;
 }
