@@ -68,8 +68,8 @@ app.post('/', (req, res, next)=> {
   return new Promise((resolve, reject)=>{
     var output;
 
-    console.log('convUserName inside Promise', convUserName)
-    console.log('convPassWord inside Promise', convPassWord)
+    console.log('conversation', conversation)
+
 
     conversation.message({
       workspace_id: convWorkspaceID,  // add workspace id
