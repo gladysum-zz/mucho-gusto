@@ -47,6 +47,9 @@ else {
   //convPassWord = appEnv.VCAP_SERVICES.conversation[0].credentials.password;
 }
 
+console.log('convUserName', convUserName)
+console.log('convPassWord', convPassWord)
+
 var conversation = new ConversationV1({
   username: convUserName,  // add username
   password: convPassWord,  // add password
