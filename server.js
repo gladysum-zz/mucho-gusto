@@ -53,7 +53,7 @@ app.post('/', (req, res, next)=> {
   return new Promise((resolve, reject)=>{
     var output;
     conversation.message({
-      workspace_id: ff557866-e9ad-4693-bcbd-9a654c85c439,
+      workspace_id: process.env.CONVERSATION_WORKSPACE_ID,
       input: {'text': message},
       context: context
     },
