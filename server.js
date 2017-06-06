@@ -35,7 +35,7 @@ const ConversationV1 = require('watson-developer-cloud/conversation/v1');
 var conversation = new ConversationV1({
   username: process.env.CONVERSATION_USERNAME,
   password: process.env.CONVERSATION_PASSWORD,
-  path: { workspace_id: ff557866-e9ad-4693-bcbd-9a654c85c439 },
+  path: { workspace_id: process.env.CONVERSATION_WORKSPACE_ID },
   version_date: '2017-04-21'
 });
 
