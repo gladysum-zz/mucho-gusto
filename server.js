@@ -35,7 +35,7 @@ const ConversationV1 = require('watson-developer-cloud/conversation/v1');
 var conversation = new ConversationV1({
   username: process.env.CONVERSATION_USERNAME,
   password: process.env.CONVERSATION_PASSWORD,
-  path: { workspace_id: process.env.CONVERSATION_WORKSPACE_ID },
+  path: { workspace_id: ff557866-e9ad-4693-bcbd-9a654c85c439 },
   version_date: '2017-04-21'
 });
 
@@ -53,7 +53,7 @@ app.post('/', (req, res, next)=> {
   return new Promise((resolve, reject)=>{
     var output;
     conversation.message({
-      workspace_id: process.env.CONVERSATION_WORKSPACE_ID,
+      workspace_id: ff557866-e9ad-4693-bcbd-9a654c85c439,
       input: {'text': message},
       context: context
     },
