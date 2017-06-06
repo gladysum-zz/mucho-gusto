@@ -1,5 +1,11 @@
 'use strict';
 
+// Provides access to cloud foundry env
+const cfenv = require('cfenv')
+
+// Get app env from cloud foundry
+const appEnv = cfenv.getAppEnv()
+
 const express = require('express');
 const app = express();
 const {resolve} = require('path')
@@ -11,12 +17,6 @@ app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 // Loads environment variables from a .env file into process.env
 const dotenv = require('dotenv');
 dotenv.config();
-
-// Provides access to cloud foundry env
-const cfenv = require('cfenv')
-
-// Get app env from cloud foundry
-const appEnv = cfenv.getAppEnv()
 
 // Serve static files from ../public
 app.use(express.static(resolve(__dirname, 'public')));
