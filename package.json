@@ -2,7 +2,7 @@
   "name": "muchogusto",
   "version": "1.0.0",
   "description": "Mucho Gusto is a language-learning app that leverages artificial intelligence and is powered by IBM Watson Conversation Service",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "",
     "start": "webpack -w & NODE_ENV=production nodemon server.js"
