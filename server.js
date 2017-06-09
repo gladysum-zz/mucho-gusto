@@ -33,10 +33,7 @@ const ConversationV1 = require('watson-developer-cloud/conversation/v1');
 // When app runs locally, process.env variables are used
 // Otherwise, variables are sourced from appEnv
 
-
-
-const workspaceID = appEnv.workspaceID;
-console.log(cfenv);
+const workspaceID = "ff557866-e9ad-4693-bcbd-9a654c85c439";
 var conversation = new ConversationV1({
   username: process.env.CONVERSATION_USERNAME,
   password: process.env.CONVERSATION_PASSWORD,
