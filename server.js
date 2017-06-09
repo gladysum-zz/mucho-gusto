@@ -36,7 +36,7 @@ const ConversationV1 = require('watson-developer-cloud/conversation/v1');
 
 
 const workspaceID = appEnv.workspaceID;
-console.log(process.env);
+console.log(cfenv);
 var conversation = new ConversationV1({
   username: process.env.CONVERSATION_USERNAME,
   password: process.env.CONVERSATION_PASSWORD,
