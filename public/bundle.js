@@ -47547,17 +47547,6 @@
 	  };
 	};
 	
-	/* ------------ DISPATCHERS ------------------ */
-	
-	// export const addUser = newUser => {
-	//   return dispatch => {
-	//     return axios.post('/api/admin', newUser)
-	//     .then(() => dispatch(fetchUsers()))
-	//     .then(res => dispatch(initUser(res.data)))
-	//     .catch(err => console.error(`Creating user: ${newUser} unsuccesful`, err))
-	//   }
-	// }
-	
 	/* ------------------ DEFAULT EXPORT ------------------ */
 	
 	exports.default = reducer;

@@ -107,7 +107,7 @@
 
 /* ----- HOME PAGE ----- */
 .home {
-  padding-bottom: 200px;
+  height: 102vh;
   margin: -2% -1% -1% -1%;
   background-image: url('/images/beach.jpg');
   background-repeat: no-repeat;
@@ -273,7 +273,8 @@
 
 /* ----- CONTACT PAGE----- */
 .contact-background {
-  padding: 120px 0 120px 0;
+  height: 102vh;
+  padding: 150px 0 120px 0;
   background-color: aqua;
   margin: -2% -1% -1% -1%;
 }
@@ -352,7 +353,7 @@ a:active {
 
 /* ----- TEAM PAGE----- */
 .team-background {
-  padding-bottom: 200px;
+  padding-bottom: 50px;
   margin: -2% -1% -1% -1%;
   background-color: #82CAFA;
 }
@@ -415,7 +416,7 @@ a:active {
 
 /* ----- FAQS PAGE----- */
 .faqs-background {
-  padding-bottom: 100px;
+  height: 102vh;
   margin: -2% -1% -1% -1%;
   background-image: url('/images/beach-chair.jpg');
   background-repeat: no-repeat;
