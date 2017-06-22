@@ -416,7 +416,7 @@ a:active {
 
 /* ----- FAQS PAGE----- */
 .faqs-background {
-  height: 102vh;
+  padding-bottom: 200px;
   margin: -2% -1% -1% -1%;
   background-image: url('/images/beach-chair.jpg');
   background-repeat: no-repeat;

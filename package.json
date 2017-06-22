@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "Gladys Um",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "axios": "^0.16.1",
     "babel-core": "^6.24.1",
