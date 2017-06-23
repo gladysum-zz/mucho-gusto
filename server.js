@@ -68,7 +68,7 @@ app.post('/', (req, res, next)=> {
       return resolve(output);
     });
   })
-  .then(output=>{res.json(output)})
+  .then(output=>res.json(output))
   .catch(next);
 });
 
