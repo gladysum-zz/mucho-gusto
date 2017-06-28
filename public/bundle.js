@@ -47509,7 +47509,7 @@
 	var greetings = ['¡Hola! ¿Quieres hablar español conmigo?', '¡Hola! ¿Quieres hablar castellano conmigo?', '¡Hola! ¿Quieres chatear conmigo?', '¡Hola! ¿Quieres chatear en castellano conmigo?', '¡Hola! ¿Quieres chatear en español conmigo?', '¡Hola! ¿Qué tal?', '¡Hola! ¿Quieres practicar el español conmigo?', '¡Hola! ¿Quieres practicar el castellano conmigo?'];
 	
 	var initialState = {
-	  messages: [['watson', greetings[Math.floor(Math.random() * 8)]]]
+	  messages: [['watson', greetings[Math.floor(greetings.length * Math.random())]]]
 	};
 	
 	/* ------------ REDUCER ------------------ */

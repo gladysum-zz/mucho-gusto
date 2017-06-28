@@ -11,7 +11,7 @@ const greetings = [
 ]
 
 const initialState = {
-  messages: [['watson', greetings[Math.floor(Math.random()*8)]]]
+  messages: [['watson', greetings[Math.floor(greetings.length * Math.random())]]]
 }
 
 /* ------------ REDUCER ------------------ */
