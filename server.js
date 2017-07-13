@@ -6,10 +6,12 @@ const cfenv = require('cfenv')
 // Get app env from cloud foundry
 const appEnv = cfenv.getAppEnv()
 
+// Create an express application
 const express = require('express');
 const app = express();
 const {resolve} = require('path')
 
+// Parse incoming request bodies
 const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
