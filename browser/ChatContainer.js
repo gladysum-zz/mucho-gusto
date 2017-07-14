@@ -8,8 +8,8 @@ import ChatComponent from './ChatComponent';
 import {addInputAction, addResponseAction} from './reducer'
 
 class ChatContainer extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       value: ''
     };

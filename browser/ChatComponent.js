@@ -1,10 +1,9 @@
 import React from 'react';
-import Paper from 'material-ui/Paper';
-import Avatar from 'material-ui/Avatar';
+import Message from './Message';
 
 export default class Chat extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.handleScroll = this.handleScroll.bind(this);
   }
 
@@ -31,23 +30,9 @@ export default class Chat extends React.Component {
       <ul
         className="chat"
         onScroll={this.handleScroll}
-        ref={
-          (div) => {
-            this.chatScroll = div;
-          }
-        }
+        ref={div => {this.chatScroll = div}}
       >
-        {this.props.messages.map((message, index) => {return (
-          <div key={index} style={{textAlign: (message[0] === 'me') ? "left" : "right"}}>
-
-            <Paper className="statement-bubble" zDepth={1} style={{verticalAlign: "middle", display: "inline-block"}} id={`statement-by-${message[0]}`}>
-              <li>
-                {message[1]}
-              </li>
-            </Paper>
-            {message[0] === 'watson' ? <Avatar style={{verticalAlign: "middle", display: "inline-block"}} src="./images/penguin-face-150.png" /> : null}
-          </div>
-        )})}
+        {this.props.messages.map((message, index) => <Message message={message} index={index} />)}
       </ul>
       </div>
     )
